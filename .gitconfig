@@ -1,0 +1,62 @@
+[alias]
+	graph = log --pretty=nice --date-order --graph
+  logp = log --pretty=nice --date-order
+  go = checkout -B
+	st = status -sb
+
+[user]
+	name = Anahkiasen
+	email = ehtnam6@gmail.com
+[github]
+  user = Anahkiasen
+[core]
+	excludesfile = /Users/laurentchastel/.gitignore_global
+
+[color]
+	ui = auto
+  interactive = auto
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+
+[credential]
+	helper = osxkeychain
+[branch "master"]
+  remote = origin
+  merge = refs/heads/master
+[push]
+	default = upstream
+[branch]
+  autosetuprebase = always
+
+[diff]
+	tool = Kaleidoscope
+[difftool]
+  prompt = false
+[difftool "Kaleidoscope"]
+	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[difftool "sourcetree"]
+	cmd = /usr/local/bin/ksdiff -w \"$LOCAL\" \"$REMOTE\"
+	path =
+
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[mergetool]
+	keepBackup = true
+
+[pretty]
+    # tut: http://gitimmersion.com/lab_10.html
+    # ref: http://linux.die.net/man/1/git-log
+    # Result: <short-sha> <commit-message> (<pointer-names>) -- <commit-author-name>; <relative-time>
+    nice = "%C(yellow)%h%C(reset) %C(white)%s%C(cyan)%d%C(reset) -- %an; %ar"
