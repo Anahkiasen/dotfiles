@@ -31,9 +31,8 @@ brew tap homebrew/versions
 # Install dependencies
 brew install git node git-ftp mongodb php54 php54-mongo php54-mcrypt composer
 
-# Reload MongoDB
-launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist
-launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist
+# Load Mongo at startup
+ln -sfv /usr/local/opt/mongodb/*.plist ~/Library/LaunchAgents
 
 # NPM -------------------------------------------------------------- /
 
