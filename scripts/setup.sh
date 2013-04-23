@@ -98,7 +98,7 @@ ln -s ~/Dropbox/SYNC/ST3/Packages $HOME/Library/Application\ Support/Sublime\ Te
 
 # Run updater ------------------------------------------------------ /
 
-source ~/scripts/update.sh
+source ~/dotfiles/scripts/update.sh
 
 # Configure Mac ---------------------------------------------------- /
 

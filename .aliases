@@ -22,6 +22,7 @@ alias rmf="rm -rf"
 
 # Update scripts --------------------------------------------------- /
 
-alias dotfiles-reinstall="rm -rf ~/dotfiles && zsh ~/scripts/uninstall.sh && git clone https://github.com/Anahkiasen/dotfiles.git ~/dotfiles && source ~/dotfiles/bootstrap.sh"
-alias dotfiles-update="zsh ~/dotfiles/bootstrap.sh"
-alias update-all="zsh ~/scripts/update.sh"
+alias dotfiles-uninstall="bash ~/dotfiles/scripts/uninstall.sh"
+alias dotfiles-update="bash ~/dotfiles/bootstrap.sh"
+alias dotfiles-reinstall="dotfiles-uninstall && dotfiles-update"
+alias update-all="bash ~/dotfiles/scripts/update.sh"

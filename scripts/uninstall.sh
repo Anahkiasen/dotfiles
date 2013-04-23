@@ -1,6 +1,6 @@
 
 # Remove Oh My Zsh
-if [ ! -d "$HOME/.oh-my-zsh" ]; then
+if [ -d "$HOME/.oh-my-zsh" ]; then
   source ~/.oh-my-zsh/tools/uninstall.sh
 fi
 
@@ -17,7 +17,6 @@ sudo rm -rf ~/.vegas
 sudo rm -rf /usr/local/
 
 # Previous dotfiles
-sudo rm -rf ~/dotfiles
 sudo rm -rf ~/scripts
 
 # Leftover ZSH files
