@@ -1,12 +1,15 @@
 
 # Clean up previous installations
-rm -rf ~/.rvm
-rm -rf ~/.npm
-rm -rf ~/.gem
-rm -rf ~/.composer
-rm -rf ~/.bower
-rm -rf ~/.bundler
-rm -rf /usr/local/
+sudo rm -rf ~/.rvm
+sudo rm -rf ~/.npm
+sudo rm -rf ~/.gem
+sudo rm -rf ~/.composer
+sudo rm -rf ~/.bower
+sudo rm -rf ~/.bundler
+sudo rm -rf /usr/local/
+sudo rm -rf ~/Library/Caches/Homebrew
+sudo rm -rf ~/Library/Logs/Homebrew
+sudo rm -rf /Library/Caches/Homebrew
 
 # HOMEBREW --------------------------------------------------------- /
 
@@ -22,11 +25,11 @@ brew tap homebrew/dupes
 brew tap homebrew/versions
 
 # Install dependencies
-brew install git node git-ftp composer mongodb php-cs-fixer php54 php54-mongo php54-mcrypt
+brew install git node git-ftp mongodb php54 php54-mongo php54-mcrypt composer
 
-# Update some of the scripts to latest
-composer self-update
-php-cs-fixer self-update
+# Reload MongoDB
+launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist
 
 # NPM -------------------------------------------------------------- /
 
@@ -39,7 +42,7 @@ npm install coffee-script kss bower -g
 # RVM -------------------------------------------------------------- /
 
 # Install RVM
-curl -L https://get.rvm.io | bash --autolibs=enabled
+curl -L https://get.rvm.io | bash -s stable --autolibs=4
 
 # Install and load Ruby
 rvm install 1.9.3
@@ -49,5 +52,19 @@ rvm use 1.9.3
 sudo gem update --system
 
 # Install required gems
-gem install sass compass genghisapp --pre
-gem install susy
+sudo gem install sass compass genghisapp --pre
+sudo gem install susy
+
+# Composer --------------------------------------------------------- /
+
+# Create Composer folder
+sudo mkdir /usr/local/composer
+cd /usr/local/composer
+
+# Create Schema
+sudo composer init -n --name="anahkiasen/dependencies" --description="Local dependencies" --require="phpunit/phpunit:dev-master" --require="fabpot/php-cs-fixer:dev-master" --stability="dev"
+sudo composer config bin-dir "/usr/local/bin/"
+
+# Install dependencies
+sudo composer update
+php-cs-fixer self-update
