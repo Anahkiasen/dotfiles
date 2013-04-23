@@ -5,21 +5,16 @@ if [ -d "$HOME/.oh-my-zsh" ]; then
 fi
 
 # Clean up previous installations
-sudo rm -rf ~/.rvm
-sudo rm -rf ~/.npm
-sudo rm -rf ~/.gem
-sudo rm -rf ~/.oh-my-zsh
-sudo rm -rf ~/.composer
-sudo rm -rf ~/.bower
-sudo rm -rf ~/.bundler
-sudo rm -rf ~/.bashrc
-sudo rm -rf ~/.vegas
-sudo rm -rf /usr/local/
+dotfolders=("rvm" "npm" "gem" "oh-my-zsh" "composer" "bower" "bundler" "bashrc" "vegas" "zsh_history" "zsh-update" "zcomdump" "/usr/local/" )
+for folder in "${dotfolders[@]}"
+do
+  if [[ $folder != /* ]]; then
+    folder="~/.$folder"
+  fi
 
-# Leftover ZSH files
-sudo rm -rf ~/.zsh_history
-sudo rm -rf ~/.zsh-update
-sudo rm -rf ~/.zcompdump
+  echo "Removing $folder"
+  sudo rm -rf $folder
+done
 
 # Clear Homebrew caches
 sudo rm -rf ~/Library/Caches/Homebrew
