@@ -1,3 +1,4 @@
+# Current unboxing time : 10:31 -
 
 # Clean up previous installations
 sudo rm -rf ~/.rvm
@@ -43,6 +44,7 @@ npm install coffee-script kss bower -g
 
 # Install RVM
 curl -L https://get.rvm.io | bash -s stable --autolibs=4
+source "$HOME/.rvm/scripts/rvm"
 
 # Install and load Ruby
 rvm install 1.9.3
@@ -53,7 +55,7 @@ sudo gem update --system
 
 # Install required gems
 sudo gem install sass compass genghisapp --pre
-sudo gem install susy
+sudo gem install susy bson_ext
 
 # Composer --------------------------------------------------------- /
 
@@ -66,5 +68,9 @@ composer init -n --name="anahkiasen/dependencies" --description="Local dependenc
 composer config bin-dir "/usr/local/bin/"
 
 # Install dependencies
-composer update
+sudo composer update
 php-cs-fixer self-update
+
+# Run updater ------------------------------------------------------ /
+
+source ~/scripts/update.sh
