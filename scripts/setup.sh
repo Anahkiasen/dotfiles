@@ -1,18 +1,5 @@
 #!/bin/bash
 
-###
-# Maxime Fabre
-# Bootstrapping script
-#
-# Current unboxing time - 0:50 (14:05)
-# Dependencies
-# - Xcode
-# - MAMP
-# - Sublime Text 3
-#
-# bash ~/scripts/bootstrap.sh
-###
-
 # Ask password upfront
 sudo -v
 
