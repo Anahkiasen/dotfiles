@@ -1,4 +1,9 @@
-# Current unboxing time : 10:31 -
+#!/bin/bash
+
+# Current unboxing time : 50mn
+
+# Ask password upfront
+sudo -v
 
 # Clean up previous installations
 sudo rm -rf ~/.rvm

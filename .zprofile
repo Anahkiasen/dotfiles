@@ -26,10 +26,4 @@ alias prettylog="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s
 alias rmf="rm -rf"
 
 ## Update all
-alias update-all="zsh ~/3793665/update.sh"
-
-# Functions -------------------------------------------------------- /
-
-export EDITOR='subl -w'
-
-export LANG=en_US.UTF-8
+alias update-all="zsh ~/scripts/update.sh"
