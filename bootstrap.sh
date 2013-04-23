@@ -19,4 +19,4 @@ git pull origin master
 rsync --exclude ".git/" --exclude "bootstrap.sh" --exclude "README.md" -av . ~
 
 # Install dependencies
-source ~/scripts/bootstrap.sh
+source ~/scripts/setup.sh
