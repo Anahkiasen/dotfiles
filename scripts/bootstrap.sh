@@ -92,3 +92,7 @@ php-cs-fixer self-update
 # Run updater ------------------------------------------------------ /
 
 source ~/scripts/update.sh
+
+# Configure Mac ---------------------------------------------------- /
+
+source ~/.osx
