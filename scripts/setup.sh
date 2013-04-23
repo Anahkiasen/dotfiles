@@ -64,6 +64,9 @@ npm install coffee-script kss bower -g
 curl -L https://get.rvm.io | bash -s stable --autolibs=4
 source "$HOME/.rvm/scripts/rvm"
 
+# Clean up
+rm -rf ~/.bashrc
+
 # Install and load Ruby
 rvm install 1.9.3
 rvm use 1.9.3
