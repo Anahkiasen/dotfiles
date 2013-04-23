@@ -89,6 +89,17 @@ composer config bin-dir "/usr/local/bin/"
 sudo composer update
 php-cs-fixer self-update
 
+# Applications ----------------------------------------------------- /
+
+# PHPMyAdmin 4
+cd /Applications/MAMP/bin
+rm -rf phpMyAdmin
+git clone git://github.com/phpmyadmin/phpmyadmin.git phpMyAdmin
+
+# Sublime Text 3
+ln -s ~/Dropbox/SYNC/ST3/Installed\ Packages $HOME/Library/Application\ Support/Sublime\ Text\ 3
+ln -s ~/Dropbox/SYNC/ST3/Packages $HOME/Library/Application\ Support/Sublime\ Text\ 3
+
 # Run updater ------------------------------------------------------ /
 
 source ~/scripts/update.sh
