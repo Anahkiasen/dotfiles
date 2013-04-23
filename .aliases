@@ -17,11 +17,11 @@ alias unpack="ruby \"/Applications/MAMP/htdocs/_newsletters/_mailcrunch/mailcrun
 # Shortcuts -------------------------------------------------------- /
 
 alias deploy="git ftp push -v && git push"
-
 alias prettylog="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-
 alias rmf="rm -rf"
 
-# Update all ------------------------------------------------------- /
+# Update scripts --------------------------------------------------- /
 
+alias dotfiles-reinstall="rm -rf ~/dotfiles && zsh ~/scripts/uninstall.sh && git clone https://github.com/Anahkiasen/dotfiles.git ~/dotfiles && source ~/dotfiles/bootstrap.sh"
+alias dotfiles-update="zsh ~/dotfiles/bootstrap.sh"
 alias update-all="zsh ~/scripts/update.sh"

@@ -3,24 +3,9 @@
 # Ask password upfront
 sudo -v
 
-# RESET ------------------------------------------------------------ /
+# REMOVE PREVIOUS INSTALLATION ------------------------------------- /
 
-# Clean up previous installations
-sudo rm -rf ~/.rvm
-sudo rm -rf ~/.npm
-sudo rm -rf ~/.gem
-sudo rm -rf ~/.oh-my-zsh
-sudo rm -rf ~/.composer
-sudo rm -rf ~/.bower
-sudo rm -rf ~/.bundler
-sudo rm -rf ~/.bashrc
-sudo rm -rf ~/.vegas
-sudo rm -rf /usr/local/
-
-# Clear Homebrew caches
-sudo rm -rf ~/Library/Caches/Homebrew
-sudo rm -rf ~/Library/Logs/Homebrew
-sudo rm -rf /Library/Caches/Homebrew
+source uninstall.sh
 
 # OH MY ZSH -------------------------------------------------------- /
 
