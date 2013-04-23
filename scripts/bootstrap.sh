@@ -1,11 +1,27 @@
 #!/bin/bash
 
-# Current unboxing time : 50mn
+###
+# Maxime Fabre
+# Bootstrapping script
+#
+# Current unboxing time - 0:50 (14:05)
+# Dependencies
+# - Xcode
+# - MAMP
+# - Sublime Text 3
+#
+# bash ~/scripts/bootstrap.sh
+###
 
 # Ask password upfront
 sudo -v
 
 # RESET ------------------------------------------------------------ /
+
+# Remove current Sublime and PHPMyAdmin installations
+rm -rf /Applications/MAMP/bin/phpMyAdmin
+rm -rf $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages
+rm -rf $HOME/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages
 
 # Clean up previous installations
 sudo rm -rf ~/.rvm
@@ -82,7 +98,9 @@ mkdir /usr/local/composer
 cd /usr/local/composer
 
 # Create Schema
-composer init -n --name="anahkiasen/dependencies" --description="Local dependencies" --require="phpunit/phpunit:dev-master" --require="fabpot/php-cs-fixer:dev-master" --stability="dev"
+composer self-update
+composer init --no-interaction --name="anahkiasen/dependencies" --description="Dependencies" --stability="dev"
+composer require phpunit/phpunit:dev-master fabpot/php-cs-fixer:dev-master --no-update
 composer config bin-dir "/usr/local/bin/"
 
 # Install dependencies
@@ -93,7 +111,6 @@ php-cs-fixer self-update
 
 # PHPMyAdmin 4
 cd /Applications/MAMP/bin
-rm -rf phpMyAdmin
 git clone git://github.com/phpmyadmin/phpmyadmin.git phpMyAdmin
 
 # Sublime Text 3
