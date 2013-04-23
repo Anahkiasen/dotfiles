@@ -5,10 +5,6 @@ sudo -v
 
 # RESET ------------------------------------------------------------ /
 
-# Remove current Sublime settings
-rm -rf $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages
-rm -rf $HOME/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages
-
 # Clean up previous installations
 sudo rm -rf ~/.rvm
 sudo rm -rf ~/.npm
@@ -103,6 +99,12 @@ php-cs-fixer self-update
 # git clone git://github.com/phpmyadmin/phpmyadmin.git phpMyAdmin
 
 # Sublime Text 3
+
+# Remove current Sublime settings
+rm -rf $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages
+rm -rf $HOME/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages
+
+# Load from Dropbox
 ln -s ~/Dropbox/SYNC/ST3/Installed\ Packages $HOME/Library/Application\ Support/Sublime\ Text\ 3
 ln -s ~/Dropbox/SYNC/ST3/Packages $HOME/Library/Application\ Support/Sublime\ Text\ 3
 
