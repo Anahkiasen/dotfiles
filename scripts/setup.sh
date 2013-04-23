@@ -18,6 +18,7 @@ sudo rm -rf ~/.oh-my-zsh
 sudo rm -rf ~/.composer
 sudo rm -rf ~/.bower
 sudo rm -rf ~/.bundler
+sudo rm -rf ~/.bashrc
 sudo rm -rf /usr/local/
 
 # Clear Homebrew caches
