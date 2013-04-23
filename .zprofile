@@ -10,20 +10,9 @@ export PATH=/Applications/MAMP/bin/php/php5.4.10/bin:$PATH
 ## NPM
 export PATH=/usr/local/share/npm/bin:/usr/local/bin:$PATH
 
-# Aliases ---------------------------------------------------------- /
+# Load the shell dotfiles ------------------------------------------ /
 
-## Application-specific
-alias bootstrap="cd /Users/laurentchastel/Dropbox/WEB\ DESIGN/_github/bootstrap && jekyll --server 1234 "
-alias psr="php-cs-fixer"
-alias recoffee="coffee -o js -cw coffee"
-alias recompass="compass clean && compass compile"
-alias remigrate="php artisan migrate:refresh --seed"
-alias unpack="ruby \"/Applications/MAMP/htdocs/_newsletters/_mailcrunch/mailcrunch\""
-
-## Shortcuts
-alias deploy="git ftp push -v && git push"
-alias prettylog="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-alias rmf="rm -rf"
-
-## Update all
-alias update-all="zsh ~/scripts/update.sh"
+for file in ~/.{exports,aliases,functions}; do
+  [ -r "$file" ] && source "$file"
+done
+unset file
