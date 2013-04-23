@@ -5,8 +5,7 @@ sudo -v
 
 # RESET ------------------------------------------------------------ /
 
-# Remove current Sublime and PHPMyAdmin installations
-rm -rf /Applications/MAMP/bin/phpMyAdmin
+# Remove current Sublime settings
 rm -rf $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages
 rm -rf $HOME/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages
 
@@ -99,8 +98,9 @@ php-cs-fixer self-update
 # Applications ----------------------------------------------------- /
 
 # PHPMyAdmin 4
-cd /Applications/MAMP/bin
-git clone git://github.com/phpmyadmin/phpmyadmin.git phpMyAdmin
+# cd /Applications/MAMP/bin
+# rm -rf phpMyAdmin
+# git clone git://github.com/phpmyadmin/phpmyadmin.git phpMyAdmin
 
 # Sublime Text 3
 ln -s ~/Dropbox/SYNC/ST3/Installed\ Packages $HOME/Library/Application\ Support/Sublime\ Text\ 3
