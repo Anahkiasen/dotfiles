@@ -58,13 +58,13 @@ sudo gem install susy
 # Composer --------------------------------------------------------- /
 
 # Create Composer folder
-sudo mkdir /usr/local/composer
+mkdir /usr/local/composer
 cd /usr/local/composer
 
 # Create Schema
-sudo composer init -n --name="anahkiasen/dependencies" --description="Local dependencies" --require="phpunit/phpunit:dev-master" --require="fabpot/php-cs-fixer:dev-master" --stability="dev"
-sudo composer config bin-dir "/usr/local/bin/"
+composer init -n --name="anahkiasen/dependencies" --description="Local dependencies" --require="phpunit/phpunit:dev-master" --require="fabpot/php-cs-fixer:dev-master" --stability="dev"
+composer config bin-dir "/usr/local/bin/"
 
 # Install dependencies
-sudo composer update
+composer update
 php-cs-fixer self-update
