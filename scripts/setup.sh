@@ -5,7 +5,7 @@ sudo -v
 
 # REMOVE PREVIOUS INSTALLATION ------------------------------------- /
 
-source uninstall.sh
+source ~/dotfiles/scripts/uninstall.sh
 
 # OH MY ZSH -------------------------------------------------------- /
 
