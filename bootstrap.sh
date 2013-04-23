@@ -18,5 +18,7 @@ git pull origin master
 # Synchronize folders
 rsync --exclude ".git/" --exclude "bootstrap.sh" --exclude "README.md" -av . ~
 
-# Install dependencies
-source ~/scripts/setup.sh
+# Install dependencies if they aren't
+if [ ! -d "$HOME/scripts" ]; then
+  source ~/scripts/setup.sh
+fi
