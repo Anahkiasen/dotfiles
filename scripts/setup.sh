@@ -14,6 +14,10 @@ git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 # Switch default shell
 chsh -s /bin/zsh
 
+# Reload zsh
+source ~/.zshrc
+source ~/.zprofile
+
 # HOMEBREW --------------------------------------------------------- /
 
 # Install Homebrew
