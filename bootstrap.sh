@@ -19,6 +19,6 @@ git pull origin master
 rsync --exclude ".git/" --exclude "scripts" --exclude "bootstrap.sh" --exclude "README.md" -av . ~
 
 # Install dependencies if they aren't
-if [ ! -d "$HOME/scripts" ]; then
+if [ ! -f "$HOME/.aliases" ]; then
   source ~/dotfiles/scripts/setup.sh
 fi
