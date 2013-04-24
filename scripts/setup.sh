@@ -29,7 +29,7 @@ brew tap homebrew/dupes
 brew tap homebrew/versions
 
 # Install dependencies
-brew install git node git-ftp mongodb php54 php54-mongo php54-mcrypt composer
+brew install git hub node git-ftp mongodb php54 php54-mongo php54-mcrypt composer
 
 # Load Mongo at startup
 ln -sfv /usr/local/opt/mongodb/*.plist ~/Library/LaunchAgents
