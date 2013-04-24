@@ -10,7 +10,7 @@
 [github]
   user = Anahkiasen
 [core]
-	excludesfile = $HOME/.gitignore_global
+	excludesfile = ~/.gitignore_global
 
 [color]
 	ui = auto
@@ -40,11 +40,8 @@
   autosetuprebase = always
 
 [diff]
-	tool = Kaleidoscope
 [difftool]
-  prompt = false
 [difftool "Kaleidoscope"]
-	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
 [difftool "sourcetree"]
 	cmd = /usr/local/bin/ksdiff -w \"$LOCAL\" \"$REMOTE\"
 	path =
@@ -60,3 +57,9 @@
     # ref: http://linux.die.net/man/1/git-log
     # Result: <short-sha> <commit-message> (<pointer-names>) -- <commit-author-name>; <relative-time>
     nice = "%C(yellow)%h%C(reset) %C(white)%s%C(cyan)%d%C(reset) -- %an; %ar"
+[difftool "Kaleidoscope"]
+	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[diff]
+	tool = Kaleidoscope

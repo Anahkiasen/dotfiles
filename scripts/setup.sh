@@ -40,7 +40,7 @@ ln -sfv /usr/local/opt/mongodb/*.plist ~/Library/LaunchAgents
 npm update npm -g
 
 # Install dependencies
-npm install coffee-script kss bower -g
+npm install coffee-script kss bower requirejs clean-css uglify-js -g
 
 # RVM -------------------------------------------------------------- /
 
