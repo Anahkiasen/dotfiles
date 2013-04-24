@@ -10,11 +10,11 @@
 # - Sublime Text 3
 ###
 
-DOTFILES=$DOTFILES
-PACKAGES=$DOTFILES/packages
+DOTFILES=~/dotfiles
+PACKAGES=$DOTFILES/scripts/packages
 
 # Update core repository
-cd ~/dotfiles
+cd $DOTFILES
 git fetch origin master
 git pull origin master
 
@@ -29,4 +29,4 @@ fi
 
 # Run updater ------------------------------------------------------ /
 
-source $DOTFILES/update.sh
+source $DOTFILES/scripts/update.sh
