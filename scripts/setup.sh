@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Ask password upfront
-sudo -v
-
 # REMOVE PREVIOUS INSTALLATION ------------------------------------- /
 
 source $DOTFILES/scripts/uninstall.sh

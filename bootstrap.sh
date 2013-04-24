@@ -10,6 +10,9 @@
 # - Sublime Text 3
 ###
 
+# Ask password upfront
+sudo -v
+
 DOTFILES=~/dotfiles
 PACKAGES=$DOTFILES/scripts/packages
 
