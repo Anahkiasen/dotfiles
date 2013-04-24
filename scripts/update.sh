@@ -3,6 +3,7 @@
 
 source $PACKAGES/homebrew.sh
 source $PACKAGES/rubygems.sh
+source $PACKAGES/npm.sh
 
 # Update the various package managers ------------------------------ /
 
