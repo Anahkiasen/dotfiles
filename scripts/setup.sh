@@ -1,5 +1,7 @@
 #!/bin/bash
 
+MAMP=/Applications/MAMP/htdocs
+
 # REMOVE PREVIOUS INSTALLATION ------------------------------------- /
 
 source $DOTFILES/scripts/uninstall.sh
@@ -80,6 +82,12 @@ php-cs-fixer self-update
 # cd /Applications/MAMP/bin
 # rm -rf phpMyAdmin
 # git clone git://github.com/phpmyadmin/phpmyadmin.git phpMyAdmin
+
+# Apaxy
+
+git clone git://github.com/AdamWhitcroft/Apaxy.git $MAMP/_apaxy
+cp $MAMP/_apaxy/apaxy/htaccess.txt $MAMP/.htaccess
+perl -pi -e 's#/{FOLDERNAME}#http://localhost:8888/_apaxy/apaxy#' $MAMP/.htaccess
 
 # Sublime Text 3
 
