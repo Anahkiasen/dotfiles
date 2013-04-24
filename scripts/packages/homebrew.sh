@@ -1,0 +1,1 @@
+brew install git hub node git-ftp mongodb php54 php54-mongo php54-mcrypt composer

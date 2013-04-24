@@ -1,0 +1,1 @@
+npm install coffee-script kss bower requirejs clean-css uglify-js -g

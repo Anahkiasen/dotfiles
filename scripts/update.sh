@@ -1,4 +1,10 @@
 
+# Update dependencies ---------------------------------------------- /
+
+source $PACKAGES/homebrew.sh
+source $PACKAGES/npm.sh
+source $PACKAGES/rubygems.sh
+
 # Update the various package managers ------------------------------ /
 
 # Rubygems

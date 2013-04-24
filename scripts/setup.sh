@@ -5,7 +5,7 @@ sudo -v
 
 # REMOVE PREVIOUS INSTALLATION ------------------------------------- /
 
-source ~/dotfiles/scripts/uninstall.sh
+source $DOTFILES/scripts/uninstall.sh
 
 # OH MY ZSH -------------------------------------------------------- /
 
@@ -29,7 +29,7 @@ brew tap homebrew/dupes
 brew tap homebrew/versions
 
 # Install dependencies
-brew install git hub node git-ftp mongodb php54 php54-mongo php54-mcrypt composer
+source $PACKAGES/homebrew.sh
 
 # Load Mongo at startup
 ln -sfv /usr/local/opt/mongodb/*.plist ~/Library/LaunchAgents
@@ -40,7 +40,7 @@ ln -sfv /usr/local/opt/mongodb/*.plist ~/Library/LaunchAgents
 npm update npm -g
 
 # Install dependencies
-npm install coffee-script kss bower requirejs clean-css uglify-js -g
+source $PACKAGES/npm.sh
 
 # RVM -------------------------------------------------------------- /
 
@@ -59,8 +59,7 @@ rvm use 1.9.3
 sudo gem update --system
 
 # Install required gems
-sudo gem install sass compass genghisapp --pre
-sudo gem install susy bson_ext
+source $PACKAGES/rubygems.sh
 
 # Composer --------------------------------------------------------- /
 
@@ -94,10 +93,6 @@ rm -rf $HOME/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages
 # Load from Dropbox
 ln -s ~/Dropbox/SYNC/ST3/Installed\ Packages $HOME/Library/Application\ Support/Sublime\ Text\ 3
 ln -s ~/Dropbox/SYNC/ST3/Packages $HOME/Library/Application\ Support/Sublime\ Text\ 3
-
-# Run updater ------------------------------------------------------ /
-
-source ~/dotfiles/scripts/update.sh
 
 # Configure Mac ---------------------------------------------------- /
 

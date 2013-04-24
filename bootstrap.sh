@@ -10,6 +10,9 @@
 # - Sublime Text 3
 ###
 
+DOTFILES=$DOTFILES
+PACKAGES=$DOTFILES/packages
+
 # Update core repository
 cd ~/dotfiles
 git fetch origin master
@@ -18,7 +21,12 @@ git pull origin master
 # Synchronize folders
 rsync --exclude ".git/" --exclude "scripts" --exclude "bootstrap.sh" --exclude "README.md" -av . ~
 
-# Install dependencies if they aren't
+# Install dependencies if they aren't ------------------------------ /
+
 if [ ! -f "$HOME/.aliases" ]; then
-  source ~/dotfiles/scripts/setup.sh
+  source $DOTFILES/scripts/setup.sh
 fi
+
+# Run updater ------------------------------------------------------ /
+
+source $DOTFILES/update.sh
