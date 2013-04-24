@@ -1,4 +1,9 @@
 
+# Sync packages ---------------------------------------------------- /
+
+source $PACKAGES/homebrew.sh
+source $PACKAGES/rubygems.sh
+
 # Update the various package managers ------------------------------ /
 
 # Rubygems
