@@ -4,7 +4,11 @@ queue=""
 for package in ${packages[@]}
 do
   installed=$(npm list $package -g -i | grep "(empty)")
-  if [ "$installed" ]; then queue="$queue $package" fi
+  if [ "$installed" ]; then
+    queue="$queue $package"
+  fi
 done
 
-npm install $queue -g
+if [[ "$queue" != "" ]]; then
+  npm install $queue -g
+fi
