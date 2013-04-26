@@ -20,6 +20,8 @@ PACKAGES=$DOTFILES/scripts/packages
 
 # Load colorized output
 source $DOTFILES/helpers/colorizer.sh
+header "Foobar"
+subheader "caca"
 
 # Commands --------------------------------------------------------- /
 

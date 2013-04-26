@@ -15,16 +15,21 @@ function info {
 
 # Headers ---------------------------------------------------------- /
 
+# Global width of headers
+globalWidth=50
+
+###
+# Create a header
+###
 function header {
   text=$(echo $1 | tr '[:lower:]' '[:upper:]')
 
   # Get text size
-  offset=5
-  size=$((${#text} + $offset + $offset + 2))
+  halfSize=$((($globalWidth - ${#text} - 2) / 2))
 
   # Create docblocks
-  block=`perl -e "print '/' x $size;"`
-  halfBlock=`perl -e "print '/' x $offset;"`
+  block=`perl -e "print '/' x $globalWidth;"`
+  halfBlock=`perl -e "print '/' x $halfSize;"`
 
   info "
 $block
@@ -33,8 +38,11 @@ $block
 "
 }
 
+###
+# Create a subheader
+###
 function subheader {
-  size=$((35-${#1}))
+  size=$(($globalWidth - 4 - ${#1}))
   docblock=`perl -e "print '-' x $size;"`
 
   info "
