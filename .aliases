@@ -21,9 +21,3 @@ alias deploy="git ftp push -v && git push"
 alias prettylog="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias rmf="rm -rf"
 alias phpext="php -m | grep"
-
-# Update scripts --------------------------------------------------- /
-
-alias dotfiles-uninstall="bash ~/dotfiles/scripts/uninstall.sh"
-alias dotfiles-update="bash ~/dotfiles/bootstrap.sh"
-alias dotfiles-reinstall="dotfiles-uninstall && dotfiles-update"

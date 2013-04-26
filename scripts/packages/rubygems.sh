@@ -1,3 +1,5 @@
+info "Syncing Rubygems packages"
+
 gems=("sass" "compass" "genghisapp" "susy" "bson_ext")
 
 for gem in "${gems[@]}"

@@ -1,3 +1,5 @@
+info "Syncing NPM packages"
+
 packages=("coffee-script" "kss" "bower" "requirejs" "clean-css" "uglify-js")
 queue=""
 
