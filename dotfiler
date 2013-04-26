@@ -25,6 +25,11 @@ source $DOTFILES/helpers/colorizer.sh
 
 case "$1" in
 
+  # Download softwares
+  download)
+    source $DOTFILES/scripts/download.sh
+  ;;
+
   # Install dependencies
   setup)
     if [ ! -f "$HOME/.aliases" ]; then
@@ -54,4 +59,5 @@ case "$1" in
     source $DOTFILES/scripts/setup.sh
     source $DOTFILES/scripts/update.sh
   ;;
+
 esac
