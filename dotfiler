@@ -32,9 +32,7 @@ case "$1" in
 
   # Install dependencies
   setup)
-    if [ ! -f "$HOME/.aliases" ]; then
-      source $DOTFILES/scripts/setup.sh
-    fi
+    source $DOTFILES/scripts/setup.sh
   ;;
 
   # Upgrade core files
