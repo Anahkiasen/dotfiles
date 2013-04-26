@@ -10,6 +10,6 @@ rsync --exclude ".git/" --exclude "scripts" --exclude "helpers" --exclude "dotfi
 success "Scripts and profiles updated"
 
 # Move binary
-chmod +x ~/dotfiler
-mv ~/dotfiler /usr/local/bin/dotfiler
+cp $DOTFILES/dotfiler /usr/local/bin/dotfiler
+chmod +x /usr/local/bin/dotfiler
 success "Binary updated"
