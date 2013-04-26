@@ -58,4 +58,13 @@ case "$1" in
     source $DOTFILES/scripts/update.sh
   ;;
 
+  # Help
+  *)
+    info "Dotfiler - Setup and upgrade helper"
+    info "      dotfiler download  - Download various useful softwares"
+    info "      dotfiler setup     - Setup dotfiler and its dependencies"
+    info "      dotfiler update    - Update Dotfiler and its dependencies"
+    info "      dotfiler upgrade   - Update Dotfiler itself"
+    info "      dotfiler uninstall - Remove Dotfiler"
+  ;;
 esac
