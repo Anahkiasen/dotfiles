@@ -38,5 +38,6 @@ function subheader {
   docblock=`perl -e "print '-' x $size;"`
 
   info "
-$1 $docblock /"
+$1 $docblock /
+"
 }
