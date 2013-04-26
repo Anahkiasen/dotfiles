@@ -1,4 +1,6 @@
 
+# Colors ----------------------------------------------------------- /
+
 function error {
   echo -e "\033[31m$1\033[0m"
 }
@@ -11,6 +13,8 @@ function info {
   echo -e "\033[34m$1\033[0m"
 }
 
+# Headers ---------------------------------------------------------- /
+
 function header {
   text=$(echo $1 | tr '[:lower:]' '[:upper:]')
 
@@ -22,9 +26,17 @@ function header {
   block=`perl -e "print '/' x $size;"`
   halfBlock=`perl -e "print '/' x $offset;"`
 
-  echo -e "\033[34m
+  info "
 $block
 $halfBlock $text $halfBlock
 $block
-\033[0m"
+"
+}
+
+function subheader {
+  size=$((35-${#1}))
+  docblock=`perl -e "print '-' x $size;"`
+
+  info "
+$1 $docblock /"
 }

@@ -1,4 +1,4 @@
-info "Syncing Rubygems packages"
+subheader "Syncing Rubygems packages"
 
 gems=("sass" "compass" "genghisapp" "susy" "bson_ext")
 
