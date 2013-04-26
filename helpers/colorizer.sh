@@ -15,13 +15,12 @@ function header {
   text=$(echo $1 | tr '[:lower:]' '[:upper:]')
 
   # Get text size
-  offset=10
-  size=$((${#text} + $offset))
-  halfSize=$((($size-$offset) / 4))
+  offset=5
+  size=$((${#text} + $offset + $offset + 2))
 
   # Create docblocks
   block=`perl -e "print '/' x $size;"`
-  halfBlock=`perl -e "print '/' x $halfSize;"`
+  halfBlock=`perl -e "print '/' x $offset;"`
 
   echo -e "\033[34m
 $block
