@@ -41,12 +41,14 @@ class PackageManager
     title "Synchronizing #{self.class.name} packages"
 
     # Check which packages to install
-    @packages.each { |package, pre|
+    @packages.each { |package, version|
+      package_name = version ? "#{package} #{version}" : "#{package}"
+
       if self.installed(package)
-        print "#{package}".pink() + " is already installed\n"
+        print "#{package_name}".pink() + " is already installed\n"
       else
-        print "#{package}".error() + " is not installed\n"
-        @queue["#{package}"] = pre
+        print "#{package_name}".error() + " is not installed\n"
+        @queue["#{package}"] = version
       end
     }
 
@@ -54,8 +56,8 @@ class PackageManager
     if @queue.empty?
       print "\nNo new packages to install\n".success()
     else
-      @queue.each { |package, pre|
-        self.install package, pre
+      @queue.each { |package, version|
+        self.install package, version
       }
     end
   end

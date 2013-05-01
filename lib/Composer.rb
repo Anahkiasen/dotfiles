@@ -25,8 +25,8 @@ class Composer < PackageManager
     return !!`sudo composer show -i #{@@global} | grep #{package}`.match("#{package}")
   end
 
-  def install(package, pre)
-    system "sudo composer require #{package}:#{pre} #{@@global}"
+  def install(package, version)
+    system "sudo composer require #{package}:#{version} #{@@global}"
   end
 
 end

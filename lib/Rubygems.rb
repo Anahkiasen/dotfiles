@@ -22,9 +22,9 @@ class Rubygems < PackageManager
     return `sudo gem list #{package} -i`.toBoolean()
   end
 
-  def install(package, pre)
-    pre = pre ? '--pre' : ''
-    system "sudo gem install #{package} #{pre}"
+  def install(package, version)
+    version = version ? '--pre' : ''
+    system "sudo gem install #{package} #{version}"
   end
 
 end
