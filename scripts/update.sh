@@ -7,7 +7,7 @@ ruby $PACKAGES/composer.rb
 ruby $PACKAGES/homebrew.rb
 ruby $PACKAGES/rubygems.rb
 ruby $PACKAGES/npm.rb
-ruby $PACKAGES/rpm.rb
+ruby $PACKAGES/rvm.rb
 
 # Update some repositories ----------------------------------------- /
 
