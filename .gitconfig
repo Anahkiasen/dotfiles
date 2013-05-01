@@ -35,7 +35,7 @@
   remote = origin
   merge = refs/heads/master
 [push]
-	default = upstream
+	default = matching
 [branch]
   autosetuprebase = always
 
