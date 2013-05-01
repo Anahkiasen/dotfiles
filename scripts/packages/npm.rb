@@ -5,7 +5,7 @@ require_relative '../../helpers/colorizer.rb'
 # Define packages to sync ------------------------------------------ /
 
 subheader "Syncing NPM packages"
-packages = ["foobar", "faboor", "coffee-script", "kss", "bower", "requirejs", "clean-css", "uglify-js"]
+packages = ["coffee-script", "kss", "bower", "requirejs", "clean-css", "uglify-js"]
 queue    = nil
 
 # Check which packages are already installed ----------------------- /
