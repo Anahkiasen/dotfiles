@@ -17,10 +17,10 @@ packages.each { |package|
 
 # Install missing packages
 if queue
-  print "Installing packages : #{queue}".success()
+  print "Installing packages : #{queue}\n".success()
   `npm install #{queue} -g`
 
 # Else display success
 else
-  print "No NPM packages to download".success()
+  print "No NPM packages to download\n".success()
 end

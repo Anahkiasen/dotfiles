@@ -26,4 +26,4 @@ packages.each { |package, pre|
   end
 }
 
-print "No packages to install".success() unless queue
+print "No packages to install\n".success() unless queue
