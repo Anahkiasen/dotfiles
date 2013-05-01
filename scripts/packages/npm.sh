@@ -13,4 +13,6 @@ done
 
 if [[ "$queue" != "" ]]; then
   npm install $queue -g
+else
+  info "No packages to add to NPM"
 fi
