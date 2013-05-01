@@ -27,24 +27,23 @@ def download(software)
   name, url = $softwares[software]
   final = ENV['HOME']+"/Downloads/"+File.basename(url)
 
-  print "Downloading #{name}".title()
+  # Download software
+  print "Downloading #{name}".subheader()
   system "curl #{url} -o #{final}"
+
+  # Print success message
   print "Correctly downloaded #{name}\n\n".success()
 end
 
 # Execution -------------------------------------------------------- /
 
-###
 # If we requested a specific file
-###
 if ARGV[0]
   download ARGV[0]
+
+# Else download all
+else
+  $softwares.each { |software, value|
+    #download software
+  }
 end
-
-###
-# Else download all files
-###
-
-$softwares.each { |software, value|
-  download software
-}

@@ -1,3 +1,5 @@
+$headerWidth = 50
+
 class String
 
   def colorize(color_code)
@@ -20,7 +22,24 @@ class String
 
   # Titles --------------------------------------------------------- /
 
-  def title
-    return "#{self} --------/\n\n".info()
+  ###
+  # A big bold header
+  ###
+  def header
+    halfSize      = ($headerWidth - self.length - 2) / 2
+    halfDecorator = "/" * halfSize
+    decorator     = "/" * $headerWidth
+
+    return "\n#{decorator}\n#{halfDecorator} #{self.upcase()} #{halfDecorator}\n#{decorator}\n".info()
   end
+
+  ###
+  # A one-line subheader
+  ###
+  def subheader
+    decorator = "-" * ($headerWidth - self.length)
+
+    return "\n#{self} #{decorator} /\n\n".info()
+  end
+
 end
