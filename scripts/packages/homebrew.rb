@@ -15,5 +15,4 @@ brew = Homebrew.new([
   "composer"
 ])
 
-brew.synchronize()
-#brew.update()
+brew.update_all()

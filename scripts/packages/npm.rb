@@ -11,5 +11,4 @@ npm = Node.new([
   "uglify-js"
 ])
 
-npm.synchronize()
-#npm.update()
+npm.update_all()

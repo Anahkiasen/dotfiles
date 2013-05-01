@@ -7,5 +7,4 @@ composer = Composer.new({
   "fabpot/php-cs-fixer" => "dev-master"
 })
 
-composer.synchronize()
 composer.update_all()

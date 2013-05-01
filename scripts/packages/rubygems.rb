@@ -10,5 +10,4 @@ gem = Rubygems.new({
   "bson_ext"   => false
 })
 
-gem.synchronize()
-#gem.update()
+gem.update_all()
