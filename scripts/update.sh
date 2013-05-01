@@ -3,43 +3,14 @@
 
 header "Syncing package managers"
 
-source $PACKAGES/homebrew.sh
+ruby $PACKAGES/composer.rb
+ruby $PACKAGES/homebrew.rb
 ruby $PACKAGES/rubygems.rb
 ruby $PACKAGES/npm.rb
-
-# Update the various package managers ------------------------------ /
-
-header "Update package managers"
-
-# Rubygems
-subheader "Updating Rubygems"
-sudo gem update
-sudo gem update --system
-sudo gem cleanup
-
-# Node Package Manager
-subheader "Updating NPM"
-sudo npm update -g
-sudo npm update npm -g
-sudo npm cache clean
-
-# Composer and PHP-CS-Fixer
-subheader "Updating Composer"
-sudo composer self-update
-sudo php-cs-fixer self-update
-
-cd /usr/local/composer
-sudo composer update
 
 # RVM
 subheader "Updating Ruby"
 sudo rvm get latest
-
-# Homebrew
-subheader "Updating Homebrew"
-brew update
-brew upgrade
-brew cleanup
 
 # Update some repositories ----------------------------------------- /
 

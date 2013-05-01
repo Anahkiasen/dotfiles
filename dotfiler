@@ -17,6 +17,7 @@ sudo -v
 
 DOTFILES=~/dotfiles
 PACKAGES=$DOTFILES/scripts/packages
+VENDOR=$DOTFILES/vendor
 
 # Load colorized output
 source $DOTFILES/helpers/colorizer.sh
