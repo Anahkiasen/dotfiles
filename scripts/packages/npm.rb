@@ -12,7 +12,7 @@ queue    = nil
 
 packages.each { |package|
   isntInstalled = `npm list #{package} -g -i`.match('(empty)')
-  if isntInstalled then queue = "#{queue} #{package}" end
+  queue = "#{queue} #{package}" if isntInstalled
 }
 
 # Install missing packages

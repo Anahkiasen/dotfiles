@@ -4,7 +4,7 @@
 header "Syncing package managers"
 
 source $PACKAGES/homebrew.sh
-source $PACKAGES/rubygems.sh
+ruby $PACKAGES/rubygems.rb
 ruby $PACKAGES/npm.rb
 
 # Update the various package managers ------------------------------ /

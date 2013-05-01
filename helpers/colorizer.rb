@@ -6,6 +6,12 @@ class String
     "\e[#{color_code}m#{self}\e[0m"
   end
 
+  # Helpers -------------------------------------------------------- /
+
+  def toBoolean
+    return self == 'true'
+  end
+
   # Colors --------------------------------------------------------- /
 
   def error

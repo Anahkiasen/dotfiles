@@ -49,7 +49,7 @@ info "Installing NPM"
 npm update npm -g
 
 # Install dependencies
-source $PACKAGES/npm.sh
+ruby $PACKAGES/npm.rb
 
 # RVM -------------------------------------------------------------- /
 
@@ -71,7 +71,7 @@ rvm use $rubyVersion
 sudo gem update --system
 
 # Install required gems
-source $PACKAGES/rubygems.sh
+ruby $PACKAGES/rubygems.rb
 
 # Composer --------------------------------------------------------- /
 
