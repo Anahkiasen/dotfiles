@@ -6,6 +6,7 @@ require_relative '../helpers/colorizer.rb'
 
 $softwares = {
   "chrome"      => ["Google Chrome",  "https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg"],
+  "canary"      => ["Chrome Canary",  "https://storage.googleapis.com/chrome-canary/GoogleChromeCanary.dmg"],
   "dropbox"     => ["Dropbox",        "https://dl.dropboxusercontent.com/u/17/Dropbox%202.0.8.dmg"],
   "hipchat"     => ["HipChat",        "http://downloads.hipchat.com.s3.amazonaws.com/mac-beta/HipChat-0.31-01uennzomg01wmg.zip"],
   "imageoptim"  => ["ImageOptim",     "http://imageoptim.com/ImageOptim.tbz2"],
@@ -44,6 +45,6 @@ if ARGV[0]
 # Else download all
 else
   $softwares.each { |software, value|
-    #download software
+    download software
   }
 end
