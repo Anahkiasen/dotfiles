@@ -141,7 +141,7 @@ defaults write com.apple.finder ShowStatusBar -bool true
 defaults write com.apple.finder ShowPathBar -bool true
 
 # Finder: allow quick look of all files
-sudo cp -rf $HOME/dotfiles/lib/QLStephen.qlgenerator /Library/QuickLook/QLStephen.qlgenerator
+sudo cp -rf $HOME/dotfiles/lib/finder/QLStephen.qlgenerator /Library/QuickLook/QLStephen.qlgenerator
 
 # Finder: allow text selection in Quick Look
 defaults write com.apple.finder QLEnableTextSelection -bool true
