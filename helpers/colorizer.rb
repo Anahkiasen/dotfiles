@@ -43,3 +43,11 @@ class String
   end
 
 end
+
+def header(text)
+  print text.header()
+end
+
+def subheader(text)
+  print text.subheader()
+end
