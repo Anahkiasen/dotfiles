@@ -27,7 +27,7 @@ case "$1" in
 
   # Download softwares
   download)
-    source $DOTFILES/scripts/download.sh
+    ruby $DOTFILES/scripts/download.rb
   ;;
 
   # Install dependencies
