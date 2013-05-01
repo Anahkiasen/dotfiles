@@ -7,10 +7,7 @@ ruby $PACKAGES/composer.rb
 ruby $PACKAGES/homebrew.rb
 ruby $PACKAGES/rubygems.rb
 ruby $PACKAGES/npm.rb
-
-# RVM
-subheader "Updating Ruby"
-sudo rvm get latest
+ruby $PACKAGES/rpm.rb
 
 # Update some repositories ----------------------------------------- /
 
