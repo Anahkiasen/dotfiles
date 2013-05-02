@@ -6,7 +6,7 @@ if File.exists?(ENV['HOME'] + '/.oh-my-zsh')
 end
 
 # Clean up package managers
-system 'ruby ~/dotfiles/packception/packception remove'
+packception remove
 
 # Clean up previous installations
 dotfolders = ["oh-my-zsh", "bower", "bundler", "bashrc", "vegas", "zsh_history", "zsh-update", "zcomdump"]

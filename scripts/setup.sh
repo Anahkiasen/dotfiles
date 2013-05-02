@@ -24,38 +24,25 @@ source ~/.zprofile
 
 # HOMEBREW --------------------------------------------------------- /
 
+# Install Packception
+ruby -e "$(curl -fsSL https://raw.github.com/Anahkiasen/packception/master/go)"
+
 # Install Homebrew
-info "Installing Homebrew"
-ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
-
-# Update Homebrew and create Cellar
-brew update
-
-# Tap required repositories
-brew tap josegonzalez/homebrew-php
-brew tap homebrew/dupes
-brew tap homebrew/versions
-
-# Install dependencies
-source $PACKAGES/homebrew.sh
+packception setup homebrew
+packception update homebrew
 
 # Load Mongo at startup
 ln -sfv /usr/local/opt/mongodb/*.plist ~/Library/LaunchAgents
 
 # NPM -------------------------------------------------------------- /
 
-# Update to latest
-info "Installing NPM"
-npm update npm -g
-
-# Install dependencies
-ruby $PACKAGES/npm.rb
+packception setup npm
+packception update npm
 
 # RVM -------------------------------------------------------------- /
 
 # Install RVM
-info "Installing RVM"
-curl -L https://get.rvm.io | bash -s stable --autolibs=4
+packception setup rvm
 source "$HOME/.rvm/scripts/rvm"
 
 # Clean up
@@ -67,28 +54,12 @@ info "Installing Ruby $rubyVersion"
 rvm install $rubyVersion
 rvm use $rubyVersion
 
-# Update Bundler
-sudo gem update --system
-
-# Install required gems
-ruby $PACKAGES/rubygems.rb
+packception update gem
 
 # Composer --------------------------------------------------------- /
 
-# Create Composer folder
-info "Installing Composer"
-mkdir /usr/local/composer
-cd /usr/local/composer
-
-# Create Schema
-composer self-update
-composer init --no-interaction --name="anahkiasen/dependencies" --description="Dependencies" --stability="dev"
-composer require phpunit/phpunit:dev-master fabpot/php-cs-fixer:dev-master --no-update
-composer config bin-dir "/usr/local/bin/"
-
-# Install dependencies
-sudo composer update
-php-cs-fixer self-update
+packception setup composer
+packception update composer
 
 # Applications ----------------------------------------------------- /
 
