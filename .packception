@@ -7,15 +7,15 @@ npm:
   - uglify-js
 
 gem:
-  - sass: true
-  - compass: true
-  - genghisapp: true
-  - susy: false
-  - bson_ext: false
+  sass: true
+  compass: true
+  genghisapp: true
+  susy: false
+  bson_ext: false
 
 composer:
-  - "phpunit/phpunit": "dev-master"
-  - "fabpot/php-cs-fixer": "dev-master"
+  "phpunit/phpunit": "dev-master"
+  "fabpot/php-cs-fixer": "dev-master"
 
 brew:
   - git
