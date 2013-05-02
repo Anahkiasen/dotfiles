@@ -23,4 +23,5 @@ rsync -a $VENDOR/apache/ /private/etc/apache2/
 cp $DOTFILES/packception/packception /usr/local/bin/packception
 cp $DOTFILES/dotfiler /usr/local/bin/dotfiler
 chmod +x /usr/local/bin/dotfiler
+chmod +x /usr/local/bin/packception
 success "Binary updated"
