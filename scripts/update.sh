@@ -3,7 +3,7 @@
 
 header "Syncing package managers"
 
-ruby $HOME/packception/packception update
+ruby $DOTFILES/packception/packception update
 
 # Update some repositories ----------------------------------------- /
 
