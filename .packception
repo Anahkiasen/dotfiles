@@ -7,11 +7,11 @@ npm:
   - uglify-js
 
 gem:
-  sass: true
-  compass: true
-  genghisapp: true
-  susy: false
-  bson_ext: false
+  sass: "--pre"
+  compass: "--pre"
+  genghisapp: "--pre"
+  susy:
+  bson_ext:
 
 composer:
   "phpunit/phpunit": "dev-master"
