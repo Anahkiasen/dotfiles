@@ -49,7 +49,7 @@ case "$1" in
 
   # Remove Dotfiler
   uninstall)
-    source $DOTFILES/scripts/uninstall.sh
+    ruby $DOTFILES/scripts/uninstall.rb
   ;;
 
   # Reinstall Dotfiler
