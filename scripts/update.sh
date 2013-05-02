@@ -3,11 +3,7 @@
 
 header "Syncing package managers"
 
-ruby $PACKAGES/composer.rb
-ruby $PACKAGES/homebrew.rb
-ruby $PACKAGES/rubygems.rb
-ruby $PACKAGES/npm.rb
-ruby $PACKAGES/rvm.rb
+packception update
 
 # Update some repositories ----------------------------------------- /
 

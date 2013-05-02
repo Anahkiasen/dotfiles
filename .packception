@@ -1,0 +1,33 @@
+npm:
+  - coffee-script
+  - kss
+  - bower
+  - requirejs
+  - clean-css
+  - uglify-js
+
+gem:
+  - sass: true
+  - compass: true
+  - genghisapp: true
+  - susy: false
+  - bson_ext: false
+
+composer:
+  - "phpunit/phpunit": "dev-master"
+  - "fabpot/php-cs-fixer": "dev-master"
+
+brew:
+  - git
+  - hub
+  - node
+  - git-ftp
+  - mongodb
+  - php54
+  - php54-mongo
+  - php54-mcrypt
+  - php54-xdebug
+  - composer
+
+rvm:
+  - 1.9.3
