@@ -49,12 +49,8 @@ source "$HOME/.rvm/scripts/rvm"
 rm -rf ~/.bashrc
 
 # Install and load Ruby
-rubyVersion=1.9.3
-info "Installing Ruby $rubyVersion"
-rvm install $rubyVersion
-rvm use $rubyVersion
-
 packception update gem
+rvm use $rubyVersion
 
 # Composer --------------------------------------------------------- /
 

@@ -26,11 +26,6 @@ source $DOTFILES/helpers/colorizer.sh
 
 case "$1" in
 
-  # Download softwares
-  download)
-    ruby $DOTFILES/scripts/download.rb $2
-  ;;
-
   # Install dependencies
   setup)
     source $DOTFILES/scripts/setup.sh
@@ -62,7 +57,6 @@ case "$1" in
   # Help
   *)
     info "Dotfiler - Setup and upgrade helper"
-    info "      dotfiler download  - Download various useful softwares"
     info "      dotfiler setup     - Setup dotfiler and its dependencies"
     info "      dotfiler update    - Update Dotfiler and its dependencies"
     info "      dotfiler upgrade   - Update Dotfiler itself"
