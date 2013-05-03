@@ -12,8 +12,8 @@ update_repository() {
 
 header "Syncing package managers"
 
-#packception upgrade
-#packception update
+packception upgrade
+packception update
 
 # Update some repositories ----------------------------------------- /
 
