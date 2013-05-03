@@ -2,7 +2,7 @@
 # Application-specific --------------------------------------------- /
 
 # Jekyll applications
-alias bootstrap="cd $HOME/Dropbox/WEB\ DESIGN/_github/bootstrap && jekyll serve --port 1234"
+alias bootstrap="cd $HOME/Dropbox/WEB\ DESIGN/_github/bootstrap && jekyll --server 1234"
 
 # Shortcuts
 alias psr="php-cs-fixer"
