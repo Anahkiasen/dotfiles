@@ -6,7 +6,7 @@ git fetch -q origin master
 git pull -q origin master
 
 # Synchronize folders
-rsync --exclude ".git/" --exclude "scripts" --exclude "helpers" --exclude "dotfiler" --exclude "packception" --exclude "README.md" -a . ~
+rsync --exclude ".git/" --exclude "scripts" --exclude "lib" --exclude "dotfiler" --exclude "vendor" --exclude "README.md" -a . ~
 success "Scripts and profiles updated"
 
 # Update Apache configuration
