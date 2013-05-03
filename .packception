@@ -12,6 +12,7 @@ gem:
   genghisapp: "--pre"
   susy:
   bson_ext:
+  jekyll: "--pre"
 
 composer:
   "phpunit/phpunit": "dev-master"
