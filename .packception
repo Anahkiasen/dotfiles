@@ -5,6 +5,7 @@ npm:
   - requirejs
   - clean-css
   - uglify-js
+  - svgo
 
 gem:
   sass: "--pre"
