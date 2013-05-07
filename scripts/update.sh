@@ -26,7 +26,7 @@ update_repository "/Applications/MAMP/bin/phpMyAdmin"
 # Bootstrap
 subheader "Updating Bootstrap"
 update_repository "/Users/anahkiasen/Dropbox/WEB DESIGN/_github/bootstrap" "3.0.0-wip"
-jekyll
+jekyll build
 
 # Oh My Zsh
 subheader "Updating Oh My ZSH"
