@@ -10,7 +10,8 @@ rsync --exclude ".git/" --exclude "helpers" --exclude "scripts" --exclude "dotfi
 success "Scripts and profiles updated"
 
 # Update Apache configuration
-rsync -a $VENDOR/apache/ /private/etc/apache2/
+rsync --exclude "hosts" -a $VENDOR/apache/ /private/etc/apache2/
+cp $VENDOR/apache/hosts /private/etc/hosts
 
 # Move binary
 cp $DOTFILES/dotfiler /usr/local/bin/dotfiler
