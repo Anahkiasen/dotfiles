@@ -35,4 +35,7 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git coffee bower brew composer gem laravel sublime)
 
+## RVM and Rubygems
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
 source $ZSH/oh-my-zsh.sh
