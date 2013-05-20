@@ -83,6 +83,9 @@ rm -rf $HOME/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages
 ln -s ~/Dropbox/SYNC/ST3/Installed\ Packages $HOME/Library/Application\ Support/Sublime\ Text\ 3
 ln -s ~/Dropbox/SYNC/ST3/Packages $HOME/Library/Application\ Support/Sublime\ Text\ 3
 
+# Add Sublime binary
+ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/sublime
+
 # Configure Mac ---------------------------------------------------- /
 
 info "Configuring Mac OSX"
