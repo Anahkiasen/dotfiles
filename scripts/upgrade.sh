@@ -13,6 +13,7 @@ success "Scripts and profiles updated"
 success "Apache configuration updated"
 rsync --exclude "hosts" -a $VENDOR/apache/ /private/etc/apache2/
 sudo cp $VENDOR/apache/hosts /private/etc/hosts
+sudo apachectl -k restart
 
 # Move binary
 cp $DOTFILES/dotfiler /usr/local/bin/dotfiler
