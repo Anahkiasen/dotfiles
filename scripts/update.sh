@@ -21,9 +21,9 @@ header "Update some third-party repositories"
 
 # Apaxy
 subheader "Updating Apaxy"
-update_repository "$MAMP/_apaxy"
-cp $MAMP/_apaxy/apaxy/htaccess.txt $MAMP/.htaccess
-perl -pi -e 's#/{FOLDERNAME}#http://localhost/_apaxy/apaxy#' $MAMP/.htaccess
+update_repository "$WORK/_apaxy"
+cp $WORK/_apaxy/apaxy/htaccess.txt $WORK/.htaccess
+perl -pi -e 's#/{FOLDERNAME}#http://localhost/_apaxy/apaxy#' $WORK/.htaccess
 
 # PHPMyAdmin
 subheader "Updating PHPMyAdmin"

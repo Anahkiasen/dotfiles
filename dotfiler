@@ -18,7 +18,7 @@ sudo -v
 DOTFILES=~/dotfiles
 PACKAGES=$DOTFILES/scripts/packages
 VENDOR=$DOTFILES/vendor
-MAMP=/Applications/MAMP/htdocs
+WORK=~/Sites
 
 # Load colorized output
 source $DOTFILES/helpers/colorizer.sh

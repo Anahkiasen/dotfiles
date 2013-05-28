@@ -60,15 +60,10 @@ packception update composer
 
 # Applications ----------------------------------------------------- /
 
-# PHPMyAdmin 4
-# cd /Applications/MAMP/bin
-# rm -rf phpMyAdmin
-# git clone git://github.com/phpmyadmin/phpmyadmin.git phpMyAdmin
-
 # Apaxy
 
 info "Installing Apaxy"
-git clone git://github.com/AdamWhitcroft/Apaxy.git $MAMP/_apaxy
+git clone git://github.com/AdamWhitcroft/Apaxy.git $WORK/_apaxy
 
 # Sublime Text 3
 
