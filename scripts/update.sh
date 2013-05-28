@@ -25,10 +25,6 @@ update_repository "$WORK/_apaxy"
 cp $WORK/_apaxy/apaxy/htaccess.txt $WORK/.htaccess
 perl -pi -e 's#/{FOLDERNAME}#http://localhost/_apaxy/apaxy#' $WORK/.htaccess
 
-# PHPMyAdmin
-subheader "Updating PHPMyAdmin"
-update_repository "/Applications/MAMP/bin/phpMyAdmin"
-
 # Bootstrap
 subheader "Updating Bootstrap"
 update_repository "/Users/anahkiasen/Dropbox/WEB DESIGN/_github/bootstrap" "3.0.0-wip"
