@@ -1,7 +1,5 @@
 #!/bin/bash
 
-MAMP=/Applications/MAMP/htdocs
-
 # REMOVE PREVIOUS INSTALLATION ------------------------------------- /
 
 header "Uninstall previous installation"
@@ -71,7 +69,6 @@ packception update composer
 
 info "Installing Apaxy"
 git clone git://github.com/AdamWhitcroft/Apaxy.git $MAMP/_apaxy
-cp $MAMP/_apaxy/apaxy/htaccess.txt $MAMP/.htaccess
 
 # Sublime Text 3
 
