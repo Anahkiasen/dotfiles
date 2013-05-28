@@ -31,8 +31,11 @@ ruby -e "$(curl -fsSL https://raw.github.com/Anahkiasen/packception/master/go)"
 packception setup homebrew
 packception update homebrew
 
-# Load Mongo at startup
+# Load Mongo and MySQL at startup
 ln -sfv /usr/local/opt/mongodb/*.plist ~/Library/LaunchAgents
+ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
 
 # NPM -------------------------------------------------------------- /
 
