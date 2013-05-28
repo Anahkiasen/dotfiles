@@ -19,6 +19,12 @@ packception update
 
 header "Update PHPMyAdmin and Oh My Zsh"
 
+# Apaxy
+subheader "Updating Apaxy"
+update_repository "$MAMP/_apaxy"
+cp $MAMP/_apaxy/apaxy/htaccess.txt $MAMP/.htaccess
+perl -pi -e 's#/{FOLDERNAME}#http://localhost/_apaxy/apaxy#' $MAMP/.htaccess
+
 # PHPMyAdmin
 subheader "Updating PHPMyAdmin"
 update_repository "/Applications/MAMP/bin/phpMyAdmin"

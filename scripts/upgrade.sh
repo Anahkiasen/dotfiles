@@ -15,6 +15,9 @@ rsync --exclude "hosts" -a $VENDOR/apache/ /private/etc/apache2/
 sudo cp $VENDOR/apache/hosts /private/etc/hosts
 sudo apachectl -k restart
 
+# Update PHP configuration
+sudo cp $VENDOR/php/php.ini /usr/local/etc/php/5.4/php.ini
+
 # Move binary
 cp $DOTFILES/dotfiler /usr/local/bin/dotfiler
 chmod +x /usr/local/bin/dotfiler
