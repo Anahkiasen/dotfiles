@@ -16,6 +16,7 @@ sudo cp $VENDOR/apache/hosts /private/etc/hosts
 sudo apachectl -k restart
 
 # Update PHP configuration
+success "PHP configuration updated"
 sudo cp $VENDOR/php/php.ini /usr/local/etc/php/5.4/php.ini
 
 # Move binary
