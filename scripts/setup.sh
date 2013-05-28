@@ -60,13 +60,14 @@ packception update composer
 
 # Applications ----------------------------------------------------- /
 
-# Apaxy
+# PHPMyAdmin
+mkdir /usr/local/share/phpmyadmin/config
 
+# Apaxy
 info "Installing Apaxy"
 git clone git://github.com/AdamWhitcroft/Apaxy.git $WORK/_apaxy
 
 # Sublime Text 3
-
 info "Installing Sublime Text 3 settings"
 
 # Remove current Sublime settings

@@ -14,8 +14,6 @@ alias recoffee="coffee -o js -cw coffee"
 alias recompass="compass clean && compass compile"
 alias remigrate="php artisan migrate:refresh --seed"
 
-alias unpack="ruby \"/Applications/MAMP/htdocs/_newsletters/_mailcrunch/mailcrunch\""
-
 # Shortcuts -------------------------------------------------------- /
 
 alias deploy="git ftp push -v && git push"
