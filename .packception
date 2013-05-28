@@ -20,16 +20,18 @@ composer:
   "fabpot/php-cs-fixer": "dev-master"
 
 brew:
-  - git
-  - hub
-  - node
-  - git-ftp
-  - mongodb
-  - php54
-  - php54-mongo
-  - php54-mcrypt
-  - php54-xdebug
   - composer
+  - git
+  - git-ftp
+  - hub
+  - mongodb
+  - mysql
+  - node
+  - php54
+  - php54-mcrypt
+  - php54-mongo
+  - php54-xdebug
+  - phpmyadmin
 
 rvm:
   - 1.9.3
