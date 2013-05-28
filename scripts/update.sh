@@ -17,7 +17,7 @@ packception update
 
 # Update some repositories ----------------------------------------- /
 
-header "Update PHPMyAdmin and Oh My Zsh"
+header "Update some third-party repositories"
 
 # Apaxy
 subheader "Updating Apaxy"
