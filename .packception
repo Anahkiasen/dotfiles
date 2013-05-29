@@ -18,6 +18,7 @@ gem:
 composer:
   "phpunit/phpunit": "dev-master"
   "fabpot/php-cs-fixer": "dev-master"
+  "phpdocumentor/phpdocumentor": "dev-develop"
 
 brew:
   - composer
