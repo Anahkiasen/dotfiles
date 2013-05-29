@@ -5,7 +5,7 @@
 alias bootstrap="cd $HOME/Dropbox/WEB\ DESIGN/_github/bootstrap && jekyll serve --port 1234"
 
 # Shortcuts
-alias phpdoc="phpdoc.php"
+alias phpdoc="sudo phpdoc.php run -d src -t docs --template=/usr/local/composer/data/templates/responsive"
 alias psr="php-cs-fixer"
 alias git=hub
 alias nuketrash="sudo rm -rvf ~/.Trash/.* && sudo rm -rvf ~/.Trash/*"
