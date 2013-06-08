@@ -17,6 +17,7 @@ alias remigrate="php artisan migrate:refresh --seed"
 
 # Shortcuts -------------------------------------------------------- /
 
+alias capdeploy="git push && cap deploy"
 alias deploy="git ftp push -v && git push"
 alias prettylog="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias rmf="rm -rf"
