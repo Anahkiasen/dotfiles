@@ -8,16 +8,16 @@ npm:
   - svgo
 
 gem:
-  global:
+  2.0.0@global:
     bson_ext:
     capistrano:
     genghisapp: "--pre"
     jekyll: "--pre"
     susy:
-  stable:
+  2.0.0@stable:
     sass:
     compass:
-  develop:
+  2.0.0@develop:
     sass: "--pre"
     compass: "--pre"
 
