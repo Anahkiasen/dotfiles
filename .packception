@@ -8,13 +8,18 @@ npm:
   - svgo
 
 gem:
-  sass: "--pre"
-  compass: "--pre"
-  genghisapp: "--pre"
-  susy:
-  bson_ext:
-  jekyll: "--pre"
-  capistrano:
+  global:
+    bson_ext:
+    capistrano:
+    genghisapp: "--pre"
+    jekyll: "--pre"
+    susy:
+  stable:
+    sass:
+    compass:
+  develop:
+    sass: "--pre"
+    compass: "--pre"
 
 composer:
   "phpunit/phpunit": "dev-master"
