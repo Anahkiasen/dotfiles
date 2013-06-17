@@ -63,6 +63,9 @@ packception update composer
 # PHPMyAdmin
 mkdir /usr/local/share/phpmyadmin/config
 
+# Cyberduck
+ln -s ~/Dropbox/SYNC/Cyberduck $HOME/Library/Application\ Support/Cyberduck
+
 # Apaxy
 info "Installing Apaxy"
 git clone git://github.com/AdamWhitcroft/Apaxy.git $WORK/_apaxy
