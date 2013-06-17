@@ -21,6 +21,7 @@ WORK=/Users/anahkiasen/Sites
 
 # Load colorized output
 source $DOTFILES/helpers/colorizer.sh
+source $DOTFILES/helpers/functions.sh
 
 # Commands --------------------------------------------------------- /
 

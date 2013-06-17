@@ -1,4 +1,4 @@
-require_relative "packception/lib/String.rb"
+require_relative "../../packception/lib/String.rb"
 
 # Remove Oh My Zsh
 if File.exists?(ENV['HOME'] + '/.oh-my-zsh')

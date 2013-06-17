@@ -63,23 +63,9 @@ packception update composer
 # PHPMyAdmin
 mkdir /usr/local/share/phpmyadmin/config
 
-# Cyberduck
-ln -s ~/Dropbox/SYNC/Cyberduck $HOME/Library/Application\ Support/Cyberduck
-
 # Apaxy
 info "Installing Apaxy"
 git clone git://github.com/AdamWhitcroft/Apaxy.git $WORK/_apaxy
-
-# Sublime Text 3
-info "Installing Sublime Text 3 settings"
-
-# Remove current Sublime settings
-rm -rf $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages
-rm -rf $HOME/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages
-
-# Load from Dropbox
-ln -s ~/Dropbox/SYNC/ST3/Installed\ Packages $HOME/Library/Application\ Support/Sublime\ Text\ 3
-ln -s ~/Dropbox/SYNC/ST3/Packages $HOME/Library/Application\ Support/Sublime\ Text\ 3
 
 # Add Sublime binary
 ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
