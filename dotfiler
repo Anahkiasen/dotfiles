@@ -14,12 +14,13 @@
 # Ask password upfront
 sudo -v
 
+# Create some shortcuts to core folders
 DOTFILES=~/dotfiles
 PACKAGES=$DOTFILES/scripts/packages
 VENDOR=$DOTFILES/vendor
 WORK=/Users/anahkiasen/Sites
 
-# Load colorized output
+# Load helpers
 source $DOTFILES/helpers/colorizer.sh
 source $DOTFILES/helpers/functions.sh
 
