@@ -1,11 +1,4 @@
 
-# Sync packages ---------------------------------------------------- /
-
-header "Update package managers"
-
-packception upgrade
-packception update
-
 # Update some repositories ----------------------------------------- /
 
 header "Update some third-party repositories"
@@ -24,3 +17,14 @@ jekyll build
 # Oh My Zsh
 subheader "Updating Oh My ZSH"
 update_repository "$HOME/.oh-my-zsh/"
+
+# Packception
+
+update_repository "$HOME/packception"
+
+# Sync packages ---------------------------------------------------- /
+
+header "Update package managers"
+
+packception upgrade
+packception update
