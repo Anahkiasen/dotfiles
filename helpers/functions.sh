@@ -18,8 +18,8 @@ sync_preferences() {
 	folder=$1
 
 	# Remove current folder
-	rm -rf $HOME/Library/Application\ Support/$folder
+	$(rm -rf "$HOME/Library/Application Support/$folder")
 
 	# Sync folder
-	ln -s ~/Dropbox/SYNC/$folder $HOME/Library/Application\ Support/$folder
+  $(ln -s "~/Dropbox/SYNC/$folder" "$HOME/Library/Application Support/$folder")
 }
