@@ -16,10 +16,12 @@ update_repository() {
 # Sync two folders by symlink
 sync_preferences() {
 	folder=$1
+  destination="$HOME/Library/Application Support/$folder"
 
-	# Remove current folder
-	$(rm -rf "$HOME/Library/Application Support/$folder")
+  # Remove current folder
+  $(rm -rf "$destination")
 
-	# Sync folder
-  $(ln -s "~/Dropbox/SYNC/$folder" "$HOME/Library/Application Support/$folder")
+  # Sync folder
+  info "Syncing $folder"
+  $(ln -s "$HOME/Dropbox/SYNC/$folder" "$destination")
 }

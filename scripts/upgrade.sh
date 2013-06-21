@@ -19,15 +19,12 @@ success "Binary updated"
 # Sync application preferences ------------------------------------- /
 
 # Cyberduck
-info "Syncing Cyberduck bookmarks"
 sync_preferences "Cyberduck"
 
 # SourceTree
-info "Syncing SourceTree bookmarks"
 sync_preferences "SourceTree"
 
 # Sublime Text 3
-info "Syncing Sublime Text 3 settings"
 sync_preferences "Sublime Text 3/Packages"
 sync_preferences "Sublime Text 3/Installed Packages"
 
