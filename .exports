@@ -8,3 +8,6 @@ export LC_ALL="en_US.UTF-8"
 
 # Always enable colored `grep` output
 export GREP_OPTIONS="--color=auto"
+
+# Hub
+export GITHUB_USER="Anahkiasen"
