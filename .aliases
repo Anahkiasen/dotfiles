@@ -7,8 +7,8 @@ alias phpext="php -m | grep"
 # Git shortcuts
 alias git=hub
 alias gaa="git add --all"
-alias capdeploy="git push && cap deploy"
-alias deploy="git ftp push -v && git push"
+alias deploy="artisan deploy:deploy --tests"
+alias ftpdeploy="git ftp push -v && git push"
 alias prettylog="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 # Rebuild

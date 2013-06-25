@@ -4,6 +4,14 @@ function mkd() {
   mkdir -p "$@" && cd "$@"
 }
 
+# Reclone a repository
+function reclone() {
+  repository=$1
+
+  rm -rf $repository
+  git clone -p $repository
+}
+
 # Determine size of a file or total size of a directory
 function fs() {
   if du -b /dev/null > /dev/null 2>&1; then
@@ -16,4 +24,11 @@ function fs() {
   else
     du $arg .[^.]* *
   fi
+}
+
+# Fixes a repository with PSR and tabs
+function psrtabs() {
+  folder=$1
+
+  php-cs-fixer fix $folder --level=all --fixers=-indentation
 }
