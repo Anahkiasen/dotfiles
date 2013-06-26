@@ -14,6 +14,7 @@ gem:
     genghisapp: "--pre"
     jekyll: "--pre"
     susy:
+    sass-globbing:
   2.0.0@stable:
     sass:
     compass:
