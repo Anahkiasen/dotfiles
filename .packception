@@ -40,6 +40,7 @@ brew:
   - php54-mongo
   - php54-xdebug
   - phpmyadmin
+  - graphviz
 
 rvm:
   - 2.0.0
