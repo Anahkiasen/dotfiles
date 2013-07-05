@@ -8,10 +8,10 @@ fe80::1%lo0     localhost
 
 # Applications ----------------------------------------------------- /
 
-127.0.0.1 api.reaaad.dev
+127.0.0.1 api.glose.dev
 127.0.0.1 autopergamene.dev
 127.0.0.1 localhost
 127.0.0.1 monaco.dev
 127.0.0.1 registry.dev
-127.0.0.1 reaaad.dev
+127.0.0.1 glose.dev
 127.0.0.1 stappler.dev
