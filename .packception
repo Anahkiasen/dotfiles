@@ -27,6 +27,7 @@ composer:
   "fabpot/php-cs-fixer": "dev-master"
   "phpdocumentor/phpdocumentor": "dev-develop"
   "squizlabs/php_codesniffer": "dev-master"
+  "phpmd/phpmd": "dev-master"
 
 brew:
   - composer
