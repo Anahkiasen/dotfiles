@@ -13,7 +13,6 @@ success "Scripts and profiles updated"
 
 # Symlink binary
 $(ln -s "$DOTFILES/dotfiler" "/usr/local/bin/dotfiler")
-chmod +x /usr/local/bin/dotfiler
 success "Binary updated"
 
 # Sync application preferences ------------------------------------- /
