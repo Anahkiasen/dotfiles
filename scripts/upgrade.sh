@@ -11,8 +11,8 @@ git pull -q origin master
 rsync --exclude ".git/" --exclude "helpers" --exclude "scripts" --exclude "dotfiler" --exclude "vendor" --exclude "README.md" -a . ~
 success "Scripts and profiles updated"
 
-# Move binary
-cp $DOTFILES/dotfiler /usr/local/bin/dotfiler
+# Symlink binary
+$(ln -s "$DOTFILES/dotfiler" "/usr/local/bin/dotfiler")
 chmod +x /usr/local/bin/dotfiler
 success "Binary updated"
 
