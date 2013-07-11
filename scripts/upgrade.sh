@@ -17,6 +17,9 @@ success "Binary updated"
 
 # Sync application preferences ------------------------------------- /
 
+# Minecraft
+sync_preferences "minecraft"
+
 # Cyberduck
 sync_preferences "Cyberduck"
 
