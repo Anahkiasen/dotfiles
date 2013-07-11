@@ -13,15 +13,27 @@ update_repository() {
   git pull origin $branch
 }
 
-# Sync two folders by symlink
-sync_preferences() {
-	folder=$1
-  destination="$HOME/Library/Application Support/$folder"
+# Symlinks two files or folders
+symlink() {
+  destination=$1
+  link=$2
 
   # Remove current folder
-  $(rm -rf "$destination")
+  if [ ! -e "$destination" ]; then
+    $(cp -R "$link" "$destination")
+  fi;
 
   # Sync folder
   info "Syncing $folder"
-  $(ln -s "$HOME/Dropbox/SYNC/$folder" "$destination")
+  $(rm -rf "$link")
+  $(ln -s "$destination" "$link")
+}
+
+# Sync two folders by symlink
+sync_preferences() {
+	folder=$1
+  link="$HOME/Library/Application Support/$folder"
+  destination="$HOME/Dropbox/SYNC/$folder"
+
+  symlink "$destination" "$link"
 }
