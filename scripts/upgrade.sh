@@ -12,7 +12,7 @@ rsync --exclude ".git/" --exclude "helpers" --exclude "scripts" --exclude "dotfi
 success "Scripts and profiles updated"
 
 # Symlink binary
-$(ln -s "$DOTFILES/dotfiler" "/usr/local/bin/dotfiler")
+symlink "$DOTFILES/dotfiler" "/usr/local/bin/dotfiler"
 success "Binary updated"
 
 # Sync application preferences ------------------------------------- /
