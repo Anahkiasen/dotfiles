@@ -22,4 +22,5 @@ alias phpdoc="sudo phpdoc.php run -d src -t docs --template=/usr/local/composer/
 alias psr="php-cs-fixer"
 
 # Applications
+alias work="subl $(pwd) && stree"
 alias bootstrap="cd $HOME/Dropbox/WEB\ DESIGN/_github/bootstrap && jekyll serve --port 1234"
