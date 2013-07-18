@@ -41,8 +41,11 @@ brew:
   - php54-mcrypt
   - php54-mongo
   - php54-xdebug
+  - php55
+  - php55-mcrypt
+  - php55-mongo
+  - php55-xdebug
   - phpmyadmin
-  - graphviz
 
 rvm:
   - 2.0.0
