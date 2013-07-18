@@ -35,6 +35,9 @@ ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
 
+# Symlink PHPLib
+symlink $(brew list php55 | grep libphp) /usr/local/lib/libphp5.so
+
 # NPM -------------------------------------------------------------- /
 
 packception setup npm

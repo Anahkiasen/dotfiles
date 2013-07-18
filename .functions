@@ -13,9 +13,13 @@ function reclone() {
 }
 
 # Switch PHP version
-function phpswitch() {
-  version=$1
-  echo $version
+function usephp() {
+  ln -sf `brew list php$1 | grep bin/php -m 1` /usr/local/bin/php
+  ln -sf `brew list php$1 | grep libphp` /usr/local/lib/libphp5.so
+  echo "Switched to PHP $1"
+  echo `brew info php$1 | head -1`
+
+  sudo apachectl -k restart
 }
 
 # Determine size of a file or total size of a directory
@@ -34,7 +38,5 @@ function fs() {
 
 # Fixes a repository with PSR and tabs
 function psrtabs() {
-  folder=$1
-
-  php-cs-fixer fix $folder --level=all --fixers=-indentation
+  php-cs-fixer fix $1 --level=all --fixers=-indentation
 }
