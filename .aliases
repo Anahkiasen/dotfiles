@@ -10,7 +10,7 @@ alias gaa="git add --all"
 alias update="git push && artisan deploy:update"
 alias deploy="git push && artisan deploy:deploy --tests"
 alias ftpdeploy="git ftp push -v && git push"
-alias prettylog="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias glpp="glp format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 # Rebuild
 alias recoffee="coffee -o js -cw coffee"
@@ -22,5 +22,5 @@ alias phpdoc="sudo phpdoc.php run -d src -t docs --template=/usr/local/composer/
 alias psr="php-cs-fixer"
 
 # Applications
-alias work="subl . && stree"
+alias work="stt && stree"
 alias bootstrap="cd $HOME/Dropbox/WEB\ DESIGN/_github/bootstrap && jekyll serve --port 1234"
