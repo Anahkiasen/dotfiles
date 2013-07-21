@@ -1,11 +1,11 @@
 npm:
+  - bower
+  - clean-css
   - coffee-script
   - kss
-  - bower
   - requirejs
-  - clean-css
-  - uglify-js
   - svgo
+  - uglify-js
 
 gem:
   2.0.0@global:
@@ -13,21 +13,21 @@ gem:
     capistrano:
     genghisapp: "--pre"
     jekyll: "--pre"
-    susy:
     sass-globbing:
+    susy:
   2.0.0@stable:
-    sass:
     compass:
+    sass:
   2.0.0@develop:
-    sass: "--pre"
     compass: "--pre"
+    sass: "--pre"
 
 composer:
-  "phpunit/phpunit": "dev-master"
   "fabpot/php-cs-fixer": "dev-master"
   "phpdocumentor/phpdocumentor": "dev-develop"
-  "squizlabs/php_codesniffer": "dev-master"
   "phpmd/phpmd": "dev-master"
+  "phpunit/phpunit": "dev-master"
+  "squizlabs/php_codesniffer": "dev-master"
 
 brew:
   - composer
@@ -46,6 +46,7 @@ brew:
   - php55-mongo
   - php55-xdebug
   - phpmyadmin
+  - zsh
 
 rvm:
   - 2.0.0
