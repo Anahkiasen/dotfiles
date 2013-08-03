@@ -35,7 +35,10 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git bower brew composer gem laravel sublime)
 
+source $ZSH/oh-my-zsh.sh
+
 ## RVM and Rubygems
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
-source $ZSH/oh-my-zsh.sh
+rvm use 2.0.0@develop
