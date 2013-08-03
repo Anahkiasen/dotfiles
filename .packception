@@ -12,7 +12,6 @@ gem:
     bson_ext:
     capistrano:
     genghisapp: "--pre"
-    jekyll: "--pre"
     sass-globbing:
     susy:
   2.0.0@stable:
