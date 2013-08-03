@@ -10,16 +10,16 @@ npm:
 gem:
   2.0.0@global:
     bson_ext:
-    capistrano:
     genghisapp: "--pre"
     sass-globbing:
-    susy:
   2.0.0@stable:
     compass:
     sass:
+    susy:
   2.0.0@develop:
     compass: "--pre"
     sass: "--pre"
+    susy: "--pre"
 
 composer:
   "fabpot/php-cs-fixer": "dev-master"
