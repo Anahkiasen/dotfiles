@@ -38,7 +38,4 @@ plugins=(git bower brew composer gem laravel sublime)
 source $ZSH/oh-my-zsh.sh
 
 ## RVM and Rubygems
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
-rvm use 2.0.0@develop
+PATH=$PATH:$HOME/.rvm/bin

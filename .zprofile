@@ -1,9 +1,4 @@
 
-# Package managers ------------------------------------------------- /
-
-## NPM
-export PATH=/usr/local/share/npm/bin:/usr/local/bin:$PATH
-
 # Load the shell dotfiles ------------------------------------------ /
 
 for file in ~/.{exports,aliases,functions}; do
@@ -11,4 +6,10 @@ for file in ~/.{exports,aliases,functions}; do
 done
 unset file
 
-export EDITOR='subl -w'
+# Package managers ------------------------------------------------- /
+
+# NPM
+export PATH=/usr/local/share/npm/bin:/usr/local/bin:$PATH
+
+# RVM
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
