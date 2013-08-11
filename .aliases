@@ -1,16 +1,20 @@
 
 # Helpers
 alias nuketrash="sudo rm -rvf ~/.Trash/.* && sudo rm -rvf ~/.Trash/*"
+
+# Shortcuts
 alias rmf="rm -rf"
 alias phpext="php -m | grep"
+alias pusof="phpunit --stop-on-failure"
 
 # Git shortcuts
 alias git=hub
-alias gaa="git add --all"
-alias update="git push && artisan deploy:update"
 alias deploy="git push && artisan deploy:deploy --tests"
-alias ftpdeploy="git ftp push -v && git push"
+alias update="git push && artisan deploy:update"
 alias glpp="glp format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gaa="git add --all"
+alias gcaa="gca --amend"
+alias gcaan="gcaa --no-edit"
 
 # Rebuild
 alias recoffee="coffee -o js -cw coffee"
