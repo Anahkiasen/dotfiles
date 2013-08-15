@@ -22,7 +22,6 @@ gem:
     susy: "--pre"
 
 composer:
-  "fabpot/php-cs-fixer": "dev-master"
   "phpdocumentor/phpdocumentor": "dev-develop"
   "phpmd/phpmd": "dev-master"
   "phpunit/phpunit": "dev-master"
@@ -36,6 +35,7 @@ brew:
   - mongodb
   - mysql
   - node
+  - php-cs-fixer
   - php54
   - php54-mcrypt
   - php54-mongo
