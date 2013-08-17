@@ -36,11 +36,13 @@ brew:
   - mysql
   - node
   - php-cs-fixer
+  - php53
   - php54
   - php54-mcrypt
-  - php54-mongo
   - php54-xdebug
   - php55
+  - php55-apcu
+  - php55-intl
   - php55-mcrypt
   - php55-mongo
   - php55-xdebug

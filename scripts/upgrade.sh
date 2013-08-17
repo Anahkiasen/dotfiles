@@ -39,7 +39,7 @@ sudo cp /private/etc/apache2/httpd.conf $VENDOR/apache/httpd.conf
 success "Apache configuration updated"
 
 # Update PHP configuration
-sudo cp $VENDOR/php/php.ini /usr/local/etc/php/5.4/php.ini
+symlink "$DOTFILES/vendor/php" "/usr/local/etc/php"
 success "PHP configuration updated"
 
 # Restart Apache
