@@ -38,4 +38,4 @@ plugins=(git bower brew composer gem laravel sublime)
 source $ZSH/oh-my-zsh.sh
 
 ## RVM and Rubygems
-PATH=$PATH:$HOME/.rvm/bin
+PATH=$PATH:$HOME/.rvm/bin:$HOME/.composer/vendor/bin

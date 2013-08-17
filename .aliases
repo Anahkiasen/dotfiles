@@ -23,7 +23,7 @@ alias remigrate="php artisan migrate:refresh --seed"
 
 # Aliases
 alias chrome="/usr/bin/open -a '/Applications/Google Chrome.app'"
-alias phpdoc="sudo phpdoc.php run -d src -t docs --template=/usr/local/composer/data/templates/responsive"
+alias phpdoc="sudo phpdoc.php run -d src -t docs --template=~/.composer/vendor/phpdocumentor/templates/responsive"
 alias psr="php-cs-fixer"
 
 # Applications
