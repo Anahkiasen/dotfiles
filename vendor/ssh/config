@@ -1,0 +1,3 @@
+Host digitalocean
+  HostName autopergamene.eu
+  User root

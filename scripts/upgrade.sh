@@ -42,5 +42,8 @@ success "Apache configuration updated"
 symlink "$DOTFILES/vendor/php" "/usr/local/etc/php"
 success "PHP configuration updated"
 
+# Update SSH hosts
+sudo cp $VENDOR/ssh/config $HOME/.ssh/config
+
 # Restart Apache
 sudo apachectl -k restart
