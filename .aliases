@@ -1,31 +1,50 @@
 
 # Helpers
+# //////////////////////////////////////////////////////////////////////
+
 alias nuketrash="sudo rm -rvf ~/.Trash/.* && sudo rm -rvf ~/.Trash/*"
 
 # Shortcuts
+# //////////////////////////////////////////////////////////////////////
+
 alias rmf="rm -rf"
 alias phpext="php -m | grep"
+
+# Vendor aliases
+# //////////////////////////////////////////////////////////////////////
+
+# PHP vendors
 alias pusof="phpunit --stop-on-failure"
-
-# Git shortcuts
-alias git=hub
-alias deploy="git push && artisan deploy:deploy --tests"
-alias update="git push && artisan deploy:update"
-alias glpp="glp format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-alias gaa="git add --all"
-alias gcaa="gca --amend"
-alias gcaan="gcaa --no-edit"
-
-# Rebuild
-alias recoffee="coffee -o js -cw coffee"
-alias recompass="compass clean && compass compile"
-alias remigrate="php artisan migrate:refresh --seed"
-
-# Aliases
-alias chrome="/usr/bin/open -a '/Applications/Google Chrome.app'"
 alias phpdoc="sudo phpdoc.php run -d src -t docs --template=~/.composer/vendor/phpdocumentor/templates/responsive"
 alias psr="php-cs-fixer"
 
-# Applications
+# Git
+alias git=hub
+alias gaa="git add --all"
+alias gcaa="gca --amend"
+alias gcaan="gcaa --no-edit"
+alias glpp="glp format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+# Laravel
+alias remigrate="php artisan migrate:refresh --seed"
+
+# Composer
+alias cgu="composer global update"
+alias cgr="composer global require"
+
+# Rocketeer
+alias deploy="git push && artisan deploy:deploy --tests"
+alias update="git push && artisan deploy:update"
+
+# Preprocessors
+alias recoffee="coffee -o js -cw coffee"
+alias recompass="compass clean && compass compile"
+
+# Aliases
+
+# General aliases
+# //////////////////////////////////////////////////////////////////////
+
+alias chrome="/usr/bin/open -a '/Applications/Google Chrome.app'"
 alias work="stt && stree"
 alias bootstrap="cd $HOME/Dropbox/WEB\ DESIGN/_github/bootstrap && jekyll serve --port 1234"
