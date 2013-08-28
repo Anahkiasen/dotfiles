@@ -12,6 +12,16 @@ function reclone() {
   git clone -p $repository
 }
 
+# Reclone a repository and go to it
+function rego() {
+  repository=$1
+  branch=$2
+
+  reclone $repository
+  cd $repository
+  git checkout $branch
+}
+
 # Switch PHP version
 function usephp() {
   ln -sf `brew list php$1 | grep bin/php -m 1` /usr/local/bin/php
