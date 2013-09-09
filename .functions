@@ -32,7 +32,9 @@ function usephp() {
   echo "Switched to $php"
   echo `brew info $php | head -1`
 
-  sudo apachectl -k restart
+  killall httpd
+  sudo apachectl -k stop
+  sudo apachectl -k start
 }
 
 # Determine size of a file or total size of a directory
