@@ -39,3 +39,6 @@ source $ZSH/oh-my-zsh.sh
 
 ## RVM and Rubygems
 PATH=$PATH:$HOME/.rvm/bin:$HOME/.composer/vendor/bin
+
+## Composer
+PATH=$PATH:vendor/bin
