@@ -17,6 +17,7 @@ fe80::1%lo0     localhost
 127.0.0.1 rooms.dev
 127.0.0.1 stappler.dev
 127.0.0.1 websup.dev
+127.0.0.1 laravelution.dev
 
 192.168.56.106 thebottle.dev
 192.168.56.107 quickvox.dev
