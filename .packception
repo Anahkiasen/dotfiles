@@ -11,21 +11,17 @@ npm:
 
 gem:
   2.0.0@global:
-    bson_ext:
-    genghisapp: "--pre"
     sass-globbing:
     capistrano: "~2"
-  2.0.0@stable:
-    compass:
-    sass:
-    susy:
-  2.0.0@develop:
     compass: "--pre"
     sass: "--pre"
+  2.0.0@stable:
     susy:
+  2.0.0@develop:
+    susy: "--pre"
 
 composer:
-  "phpdocumentor/phpdocumentor": "dev-develop"
+  "d11wtq/boris": "dev-master"
   "phpmd/phpmd": "dev-master"
   "phpunit/phpunit": "dev-master"
   "squizlabs/php_codesniffer": "dev-master"
@@ -33,18 +29,17 @@ composer:
 brew:
   - composer
   - git
-  - git-ftp
   - hub
   - mongodb
   - mysql
   - node
   - php-cs-fixer
   - php53
+  - php53-mcrypt
   - php54
   - php54-mcrypt
   - php54-xdebug
   - php55
-  - php55-apcu
   - php55-intl
   - php55-mcrypt
   - php55-mongo
