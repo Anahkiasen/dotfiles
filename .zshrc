@@ -42,3 +42,6 @@ PATH=$PATH:$HOME/.rvm/bin:$HOME/.composer/vendor/bin
 
 ## Composer
 PATH=$PATH:vendor/bin
+
+## NPM
+PATH=$PATH:node_modules/.bin
