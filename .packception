@@ -24,7 +24,6 @@ composer:
   "d11wtq/boris": "dev-master"
   "phpmd/phpmd": "dev-master"
   "phpunit/phpunit": "dev-master"
-  "squizlabs/php_codesniffer": "dev-master"
 
 brew:
   - composer
