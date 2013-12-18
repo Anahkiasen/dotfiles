@@ -41,7 +41,7 @@ source $ZSH/oh-my-zsh.sh
 PATH=$PATH:$HOME/.rvm/bin:$HOME/.composer/vendor/bin
 
 ## Composer
-PATH=$PATH:vendor/bin
+PATH=vendor/bin:$PATH
 
 ## NPM
-PATH=$PATH:node_modules/.bin
+PATH=node_modules/.bin:$PATH
