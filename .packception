@@ -21,9 +21,11 @@ gem:
     susy: "--pre"
 
 composer:
-  "d11wtq/boris": "dev-master"
-  "phpmd/phpmd": "dev-master"
   "phpunit/phpunit": "dev-master"
+  "phpmd/phpmd": "dev-master"
+  "squizlabs/php_codesniffer": "dev-master"
+  "d11wtq/boris": "dev-master"
+  "fabpot/php-cs-fixer": "dev-master"
 
 brew:
   - composer
@@ -32,7 +34,6 @@ brew:
   - mongodb
   - mysql
   - node
-  - php-cs-fixer
   - php53
   - php53-mcrypt
   - php54
