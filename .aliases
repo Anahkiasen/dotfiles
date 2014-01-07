@@ -30,6 +30,7 @@ alias glpp="glp format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(b
 alias remigrate="php artisan migrate:refresh --seed"
 
 # Composer
+alias composer="/usr/local/bin/hhvm /usr/local/bin/composer"
 alias cr="composer require"
 alias cgu="composer global update"
 alias cgr="composer global require"
