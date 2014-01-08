@@ -9,7 +9,7 @@ function reclone() {
   repository=$1
 
   rm -rf $repository
-  git clone $repository --depth="5" -p
+  git clone $repository --depth 5 -p
 }
 
 # Reclone a repository and go to it
