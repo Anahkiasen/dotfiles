@@ -6,10 +6,12 @@ function mkd() {
 
 # Reclone a repository
 function reclone() {
+  default_branch=master
   repository=$1
+  branch=${2:$default_branch}
 
   rm -rf $repository
-  git clone $repository --depth 5 -p
+  git clone -b $2 $repository --depth 5 -p
 }
 
 # Reclone a repository and go to it
@@ -17,9 +19,8 @@ function rego() {
   repository=$1
   branch=$2
 
-  reclone $repository
+  reclone $repository $branch
   cd $repository
-  git checkout $branch
 }
 
 # Switch PHP version
