@@ -8,8 +8,17 @@ unset file
 
 # Package managers ------------------------------------------------- /
 
-# NPM
-export PATH=/usr/local/share/npm/bin:/usr/local/bin:$PATH
+## Homebrew
+PATH=/usr/local/bin:$PATH
+
+## NPM
+PATH=node_modules/.bin:/usr/local/share/npm/bin:$PATH
+
+## Composer
+PATH=vendor/bin:$PATH:$HOME/.composer/vendor/bin
+
+## RVM
+PATH=$PATH:$HOME/.rvm/bin
 
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

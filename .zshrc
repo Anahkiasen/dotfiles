@@ -36,12 +36,3 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git bower brew composer gem laravel sublime)
 
 source $ZSH/oh-my-zsh.sh
-
-## RVM and Composer
-PATH=$PATH:$HOME/.rvm/bin:$HOME/.composer/vendor/bin
-
-## Composer
-PATH=vendor/bin:$PATH
-
-## NPM
-PATH=node_modules/.bin:$PATH
