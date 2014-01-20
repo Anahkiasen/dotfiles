@@ -8,6 +8,7 @@ alias add-spacer="defaults write com.apple.dock persistent-apps -array-add '{til
 # Shortcuts
 # //////////////////////////////////////////////////////////////////////
 
+alias sayf="say --voice=\"Thomas\""
 alias rmf="rm -rf"
 alias phpext="php -m | grep"
 
