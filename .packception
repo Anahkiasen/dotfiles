@@ -1,24 +1,15 @@
 npm:
   - bower
-  - clean-css
-  - coffee-script
   - grunt
   - grunt-cli
   - kss
-  - requirejs
   - svgo
-  - uglify-js
 
 gem:
   2.0.0@global:
     sass-globbing:
-    capistrano: "~2"
     compass: "--pre"
     sass: "--pre"
-  2.0.0@stable:
-    susy:
-  2.0.0@develop:
-    susy: "--pre"
 
 composer:
   "phpunit/phpunit": "dev-master"
@@ -31,18 +22,13 @@ brew:
   - composer
   - git
   - hub
-  - mongodb
   - mysql
   - node
   - php53
   - php53-mcrypt
-  - php54
-  - php54-mcrypt
-  - php54-xdebug
+  - php53-xdebug
   - php55
-  - php55-intl
   - php55-mcrypt
-  - php55-mongo
   - php55-xdebug
   - phpmyadmin
   - zsh
