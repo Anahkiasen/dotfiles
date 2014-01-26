@@ -6,10 +6,9 @@ npm:
   - svgo
 
 gem:
-  2.0.0@global:
-    sass-globbing:
-    compass: "--pre"
-    sass: "--pre"
+  sass-globbing:
+  compass: "--pre"
+  sass: "--pre"
 
 composer:
   "phpunit/phpunit": "dev-master"
