@@ -9,6 +9,7 @@ gem:
   sass-globbing:
   compass: "--pre"
   sass: "--pre"
+  susy: "--pre"
 
 composer:
   "phpunit/phpunit": "dev-master"
