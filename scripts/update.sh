@@ -21,5 +21,4 @@ update_repository "$HOME/packception"
 
 header "Update package managers"
 
-packception upgrade
-packception update
+packception sync

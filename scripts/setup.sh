@@ -23,11 +23,11 @@ source ~/.zprofile
 # HOMEBREW --------------------------------------------------------- /
 
 # Install Packception
-ruby -e "$(curl -fsSL https://raw.github.com/Anahkiasen/packception/master/go)"
+git clone git@github.com:Anahkiasen/packception.git ~/packception
+cp ~/packception/bin/packception.phar /usr/local/bin/packception
 
 # Install Homebrew
-packception setup homebrew
-packception update homebrew
+packception sync brew
 
 # Load Mongo and MySQL at startup
 ln -sfv /usr/local/opt/mongodb/*.plist ~/Library/LaunchAgents
@@ -40,26 +40,24 @@ symlink $(brew list php55 | grep libphp) /usr/local/lib/libphp5.so
 
 # NPM -------------------------------------------------------------- /
 
-packception setup npm
-packception update npm
+packception sync npm
 
 # RVM -------------------------------------------------------------- /
 
 # Install RVM
-packception setup rvm
+packception sync rvm
 source "$HOME/.rvm/scripts/rvm"
 
 # Clean up
 rm -rf ~/.bashrc
 
 # Install and load Ruby
-packception update gem
+packception sync gem
 rvm use $rubyVersion
 
 # Composer --------------------------------------------------------- /
 
-packception setup composer
-packception update composer
+packception sync composer
 
 # Applications ----------------------------------------------------- /
 
