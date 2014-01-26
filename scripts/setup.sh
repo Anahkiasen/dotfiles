@@ -24,7 +24,7 @@ source ~/.zprofile
 
 # Install Packception
 git clone git@github.com:Anahkiasen/packception.git ~/packception
-cp ~/packception/bin/packception.phar /usr/local/bin/packception
+ln -s ~/packception/bin/packception.phar /usr/local/bin/packception
 
 # Install Homebrew
 packception sync brew
