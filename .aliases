@@ -39,6 +39,7 @@ alias remigrate="php artisan migrate:refresh --seed"
 alias cr="composer require"
 alias cgu="composer global update"
 alias cgr="composer global require"
+alias recompose="rmf vendor && rmf composer.lock && composer install"
 
 # Rocketeer
 alias deploy="git push && artisan deploy:deploy --tests"
