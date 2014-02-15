@@ -8,9 +8,9 @@ module.exports = {
 		files: ['Gruntfile.js', '.grunt/**/*'],
 		tasks: 'default',
 	},
-	markdown: {
-		files: ['index.template.html', 'wiki/*.md', 'rocketeer/README.md'],
-		tasks: 'md',
+	images: {
+		files: '<%= paths.original.images %>/**/*',
+		tasks: 'copy',
 	},
 	scripts: {
 		files: '<%= paths.original.js %>/**/*',

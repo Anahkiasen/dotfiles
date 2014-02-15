@@ -4,8 +4,8 @@ module.exports = {
 			{
 				expand : true,
 				src    : ['**'],
-				cwd    : '<%= components %>/flat-ui/images',
-				dest   : '<%= builds %>/images'
+				cwd    : '<%= paths.components.bootstrap.fonts %>',
+				dest   : '<%= builds %>/css/fonts'
 			},
 			{
 				expand : true,

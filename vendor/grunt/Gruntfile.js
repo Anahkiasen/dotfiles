@@ -26,6 +26,7 @@ module.exports = function(grunt) {
 	////////////////////////////////////////////////////////////////////
 
 	var config = {
+		grunt      : '.grunt',
 		app        : 'public/app',
 		builds     : 'public/builds',
 		components : 'public/components',
@@ -44,8 +45,9 @@ module.exports = function(grunt) {
 			},
 			components: {
 				bootstrap: {
-					css : '<%= components %>/bootstrap/dist/css/bootstrap.css',
-					js  : '<%= components %>/bootstrap/dist/js/bootstrap.js',
+					css   : '<%= components %>/bootstrap/dist/css/bootstrap.css',
+					fonts : '<%= components %>/bootstrap/dist/fonts',
+					js    : '<%= components %>/bootstrap/dist/js/bootstrap.js',
 				},
 				jquery: '<%= components %>/jquery/dist/jquery.js',
 			}
@@ -53,7 +55,7 @@ module.exports = function(grunt) {
 	};
 
 	// Load all tasks
-	loadConfig('./.grunt/');
+	loadConfig('./' +config.grunt+ '/');
 	grunt.initConfig(config);
 
 	////////////////////////////////////////////////////////////////////
