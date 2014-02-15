@@ -1,0 +1,47 @@
+module.exports = function(grunt) {
+
+	////////////////////////////////////////////////////////////////////
+	/////////////////////////////// COMMANDS ///////////////////////////
+	////////////////////////////////////////////////////////////////////
+
+	grunt.registerTask('default', 'Build assets for local', [
+		'css',
+		'js',
+		'copy',
+	]);
+
+	grunt.registerTask('production', 'Build assets for production', [
+		'default',
+		'concat',
+		'minify'
+	]);
+
+	// Flow
+	////////////////////////////////////////////////////////////////////
+
+	grunt.registerTask('minify', 'Minify assets', [
+		'cssmin',
+		'uglify',
+	]);
+
+	grunt.registerTask('images', 'Recompress images', [
+		'svgmin',
+		'tinypng',
+	]);
+
+	// By filetype
+	////////////////////////////////////////////////////////////////////
+
+	grunt.registerTask('js', 'Build scripts', [
+		'jshint',
+		'concat:js',
+	]);
+
+	grunt.registerTask('css', 'Build stylesheets', [
+		'compass:compile',
+		'csslint',
+		'autoprefixer',
+		'concat:css',
+	]);
+
+}
