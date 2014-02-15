@@ -9,7 +9,7 @@ module.exports = {
 		tasks: 'default',
 	},
 	images: {
-		files: '<%= paths.original.images %>/**/*',
+		files: '<%= paths.original.img %>/**/*',
 		tasks: 'copy',
 	},
 	scripts: {
