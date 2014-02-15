@@ -56,6 +56,10 @@ case "$1" in
     source $DOTFILES/scripts/update.sh
   ;;
 
+  grunt)
+    source $DOTFILES/scripts/grunt.sh
+  ;;
+
   # Help
   *)
     info "Dotfiler - Setup and upgrade helper"

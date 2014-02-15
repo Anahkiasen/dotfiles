@@ -1,0 +1,1 @@
+rsync -aruv --include ".grunt" $VENDOR/grunt/ .
