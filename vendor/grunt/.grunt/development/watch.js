@@ -8,15 +8,15 @@ module.exports = {
 		files: ['Gruntfile.js', '.grunt/**/*'],
 		tasks: 'default',
 	},
-	images: {
+	img: {
 		files: '<%= paths.original.img %>/**/*',
 		tasks: 'copy',
 	},
-	scripts: {
+	js: {
 		files: '<%= paths.original.js %>/**/*',
 		tasks: 'js',
 	},
-	stylesheets: {
+	css: {
 		files: '<%= paths.original.sass %>/**/*',
 		tasks: 'css',
 	},

@@ -11,8 +11,8 @@ module.exports = function(grunt) {
 	 * @return {Object}
 	 */
 	function loadConfig(folder) {
-		var glob   = require('glob');
-		var path   = require('path');
+		var glob = require('glob');
+		var path = require('path');
 		var key;
 
 		glob.sync('**/*.js', {cwd: folder}).forEach(function(option) {
@@ -26,6 +26,9 @@ module.exports = function(grunt) {
 	////////////////////////////////////////////////////////////////////
 
 	var config = {
+		pkg  : grunt.file.readJSON('package.json'),
+		name : '<%= pkg.name %>',
+
 		grunt      : '.grunt',
 		app        : 'public/app',
 		builds     : 'public/builds',
