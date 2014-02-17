@@ -5,7 +5,7 @@ module.exports = {
 	},
 
 	grunt: {
-		files: ['Gruntfile.js', '.grunt/**/*'],
+		files: ['Gruntfile.js', '<%= grunt %>/**/*'],
 		tasks: 'default',
 	},
 	img: {
