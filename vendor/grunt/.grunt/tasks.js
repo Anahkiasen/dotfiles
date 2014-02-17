@@ -10,6 +10,12 @@ module.exports = function(grunt) {
 		'copy',
 	]);
 
+	grunt.registerTask('rebuild', 'Rebuild all assets from scratch', [
+		'clean',
+		'compass:clean',
+		'default',
+	]);
+
 	grunt.registerTask('production', 'Build assets for production', [
 		'default',
 		'concat',
