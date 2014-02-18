@@ -20,6 +20,8 @@ chsh -s /bin/zsh
 source ~/.zshrc
 source ~/.zprofile
 
+ln -s $VENDOR/zsh/themes/anahkiasen.zsh-theme ~/.oh-my-zsh/themes/anahkiasen.zsh-theme
+
 # HOMEBREW --------------------------------------------------------- /
 
 # Install Packception
