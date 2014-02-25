@@ -4,6 +4,7 @@ npm:
   - grunt-cli
   - kss
   - svgo
+  - tldr
 
 gem:
   sass-globbing:
