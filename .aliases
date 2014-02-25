@@ -30,7 +30,7 @@ alias git=hub
 alias gaa="git add --all"
 alias gcaa="gca --amend"
 alias gcaan="gcaa --no-edit"
-alias glpp="glp format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias glpp="git lg"
 
 # Laravel
 alias remigrate="php artisan migrate:refresh --seed"

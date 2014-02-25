@@ -1,6 +1,5 @@
 [alias]
-  graph = log --pretty=nice --date-order --graph
-  logp = log --pretty=nice --date-order
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
   go = checkout -B
   st = status -sb
 
