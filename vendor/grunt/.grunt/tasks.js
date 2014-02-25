@@ -46,6 +46,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('css', 'Build stylesheets', [
 		'compass:compile',
 		'csslint',
+		'csscss',
 		'autoprefixer',
 		'concat:css',
 	]);
