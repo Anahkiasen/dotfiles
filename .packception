@@ -22,6 +22,7 @@ composer:
 brew:
   - composer
   - git
+  - git-ftp
   - hub
   - mysql
   - node
@@ -31,6 +32,8 @@ brew:
   - php55
   - php55-mcrypt
   - php55-xdebug
+  - php55-zmq
+  - zeromq
   - phpmyadmin
   - zsh
 
