@@ -7,11 +7,11 @@ npm:
   - tldr
 
 gem:
-  breakpoint
+  breakpoint:
   compass: "--pre"
-  csscss
+  csscss:
   sass: "--pre"
-  sass-globbing
+  sass-globbing:
   susy: "--pre"
 
 composer:
