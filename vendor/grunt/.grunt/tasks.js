@@ -38,6 +38,12 @@ module.exports = function(grunt) {
 	// By filetype
 	////////////////////////////////////////////////////////////////////
 
+	grunt.registerTask('md', 'Build contents', [
+		'concat:md',
+		'markdown',
+		'prettify',
+	]);
+
 	grunt.registerTask('js', 'Build scripts', [
 		'jshint',
 		'concat:js',

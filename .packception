@@ -26,6 +26,7 @@ brew:
   - git
   - git-ftp
   - hub
+  - mackup
   - mysql
   - node
   - php53
@@ -35,9 +36,45 @@ brew:
   - php55-mcrypt
   - php55-xdebug
   - php55-zmq
-  - zeromq
   - phpmyadmin
+  - zeromq
   - zsh
+
+cask:
+  - adobe-reader
+  - all2mp3
+  - cyberduck
+  - dropbox
+  - firefox
+  - flash
+  - google-chrome
+  - imageoptim
+  - iterm2
+  - lastfm
+  - libreoffice
+  - livereload
+  - mou
+  - opera
+  - sequel-pro
+  - shuttle
+  - skype
+  - slack
+  - sourcetree
+  - spectacle
+  - spotify
+  - steam
+  - sublime-text3
+  - the-unarchiver
+  - tvshows
+  - unity-web-player
+  - utorrent
+  - vagrant
+  - vimediamanager
+  - virtualbox
+  - vlc
+  - xbmc
+  - xbox360-controller-driver
+  - xquartz
 
 rvm:
   - 2.0.0
