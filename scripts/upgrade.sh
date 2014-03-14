@@ -20,15 +20,7 @@ success "Binary updated"
 # Minecraft
 sync_preferences "minecraft"
 
-# Cyberduck
-sync_preferences "Cyberduck"
-
-# SourceTree
-sync_preferences "SourceTree"
-
-# Sublime Text 3
-sync_preferences "Sublime Text 3/Packages"
-sync_preferences "Sublime Text 3/Installed Packages"
+mackup restore
 
 # Update Apache and PHP configuration ------------------------------ /
 
@@ -41,9 +33,6 @@ success "Apache configuration updated"
 # Update PHP configuration
 symlink "$DOTFILES/vendor/php" "/usr/local/etc/php"
 success "PHP configuration updated"
-
-# Update SSH hosts
-sudo cp $VENDOR/ssh/config $HOME/.ssh/config
 
 # Restart Apache
 sudo apachectl -k restart
