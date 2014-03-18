@@ -11,7 +11,7 @@ function reclone() {
   branch=${2:$default_branch}
 
   rm -rf $repository
-  git clone -b $2 $repository --depth 5 -p
+  git clone -b $2 $repository -p
 }
 
 # Reclone a repository and go to it
