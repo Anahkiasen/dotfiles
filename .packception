@@ -43,6 +43,8 @@ brew:
 cask:
   - adobe-reader
   - all2mp3
+  - betterzipql
+  - bootchamp
   - cyberduck
   - dropbox
   - firefox
@@ -55,12 +57,17 @@ cask:
   - livereload
   - mou
   - opera
+  - qlmarkdown
+  - qlstephen
+  - quicklook-csv
+  - quicklook-json
   - sequel-pro
   - shuttle
   - skype
   - slack
   - sourcetree
   - spectacle
+  - spotifree
   - spotify
   - steam
   - sublime-text3
