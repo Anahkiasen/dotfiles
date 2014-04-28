@@ -43,6 +43,7 @@ brew:
 cask:
   - adobe-reader
   - all2mp3
+  - atom
   - betterzipql
   - bootchamp
   - cyberduck
@@ -57,10 +58,12 @@ cask:
   - livereload
   - mou
   - opera
+  - phpstorm-eap
   - qlmarkdown
   - qlstephen
   - quicklook-csv
   - quicklook-json
+  - screenhero
   - sequel-pro
   - shuttle
   - skype
@@ -78,6 +81,7 @@ cask:
   - vagrant
   - vimediamanager
   - virtualbox
+  - viscosity
   - vlc
   - xbmc
   - xbox360-controller-driver
