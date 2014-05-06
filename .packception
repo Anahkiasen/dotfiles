@@ -22,6 +22,7 @@ composer:
   "fabpot/php-cs-fixer": "dev-master"
 
 brew:
+  - brew-cask
   - composer
   - git
   - git-ftp
@@ -29,6 +30,7 @@ brew:
   - mackup
   - mysql
   - node
+  - osxfuse
   - php53
   - php53-mcrypt
   - php53-xdebug
@@ -37,6 +39,7 @@ brew:
   - php55-xdebug
   - php55-zmq
   - phpmyadmin
+  - sshfs
   - zeromq
   - zsh
 
