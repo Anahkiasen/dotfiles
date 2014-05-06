@@ -68,6 +68,7 @@ function shmount() {
   fi
 
   sshfs $host:$folder ~/Sites/_remote -o transform_symlinks,noappledouble,auto_cache,reconnect,defer_permissions,negative_vncache,volname=_remote
+  cd ~/Sites/_remote/current
   echo "Mounted $1"
 }
 
