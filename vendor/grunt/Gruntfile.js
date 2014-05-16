@@ -38,6 +38,7 @@ module.exports = function(grunt) {
 			original: {
 				css  : '<%= app %>/css',
 				js   : '<%= app %>/js',
+				ts   : '<%= app %>/ts',
 				sass : '<%= app %>/sass',
 				img  : '<%= app %>/img',
 				svg  : '<%= app %>/svg',
