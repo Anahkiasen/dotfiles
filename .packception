@@ -48,7 +48,6 @@ cask:
   - all2mp3
   - atom
   - betterzipql
-  - bootchamp
   - cyberduck
   - dropbox
   - firefox
@@ -56,9 +55,9 @@ cask:
   - google-chrome
   - imageoptim
   - iterm2
+  - kaleidoscope
   - lastfm
   - libreoffice
-  - livereload
   - mou
   - opera
   - phpstorm-eap
