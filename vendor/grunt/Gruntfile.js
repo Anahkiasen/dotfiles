@@ -1,7 +1,21 @@
 module.exports = function(grunt) {
 
 	// Load modules
-	require('load-grunt-tasks')(grunt);
+	grunt.loadNpmTasks('grunt-autoprefixer');
+	grunt.loadNpmTasks('grunt-bower-task');
+	grunt.loadNpmTasks('grunt-contrib-clean');
+	grunt.loadNpmTasks('grunt-contrib-compass');
+	grunt.loadNpmTasks('grunt-contrib-concat');
+	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-contrib-csslint');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
+	grunt.loadNpmTasks('grunt-contrib-jshint');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-csscss');
+	grunt.loadNpmTasks('grunt-svgmin');
+	grunt.loadNpmTasks('grunt-tinypng');
+	grunt.loadNpmTasks('grunt-typescript');
 
 	/**
 	 * Loads all available tasks options
