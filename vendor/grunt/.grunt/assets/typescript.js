@@ -1,10 +1,12 @@
 module.exports = {
 	options: {
-		target      : 'es5',
-		sourceMap   : false,
-		declaration : false,
-		comments    : false,
-		basePath   : '<%= paths.original.ts %>'
+		target       : 'es5',
+		sourceMap    : false,
+		declaration  : false,
+		comments     : false,
+		indentStep   : 2,
+		useTabIndent : true,
+		basePath     : '<%= paths.original.ts %>'
 	},
 
 	dest: {
