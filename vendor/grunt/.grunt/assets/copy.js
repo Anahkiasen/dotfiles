@@ -5,7 +5,7 @@ module.exports = {
 				expand : true,
 				src    : ['**'],
 				cwd    : '<%= paths.components.bootstrap.fonts %>',
-				dest   : '<%= builds %>/fonts'
+				dest   : '<%= paths.compiled.fonts %>'
 			},
 			{
 				expand : true,

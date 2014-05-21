@@ -50,18 +50,20 @@ module.exports = function(grunt) {
 
 		paths: {
 			original: {
-				css  : '<%= app %>/css',
-				js   : '<%= app %>/js',
-				ts   : '<%= app %>/ts',
-				sass : '<%= app %>/sass',
-				img  : '<%= app %>/img',
-				svg  : '<%= app %>/svg',
+				css   : '<%= app %>/css',
+				js    : '<%= app %>/js',
+				ts    : '<%= app %>/ts',
+				sass  : '<%= app %>/sass',
+				fonts : '<%= app %>/fonts',
+				img   : '<%= app %>/img',
+				svg   : '<%= app %>/svg',
 			},
 			compiled: {
-				css : '<%= builds %>/css',
-				js  : '<%= builds %>/js',
-				img : '<%= builds %>/img',
-				svg : '<%= builds %>/svg',
+				css   : '<%= builds %>/css',
+				js    : '<%= builds %>/js',
+				fonts : '<%= builds %>/fonts',
+				img   : '<%= builds %>/img',
+				svg   : '<%= builds %>/svg',
 			},
 			components: {
 				jquery    : '<%= components %>/jquery/dist/jquery.js',
