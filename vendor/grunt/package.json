@@ -21,6 +21,7 @@
 		"grunt-csscss": "*",
 		"grunt-svgmin": "*",
 		"grunt-tinypng": "*",
-		"grunt-typescript": "*"
+		"grunt-typescript": "*",
+    "jit-grunt": "*"
 	}
 }
