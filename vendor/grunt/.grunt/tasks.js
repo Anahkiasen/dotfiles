@@ -17,7 +17,8 @@ module.exports = function(grunt) {
 	]);
 
 	grunt.registerTask('production', 'Build assets for production', [
-		'concat',
+		'js',
+		'concat:css',
 		'copy',
 		'minify'
 	]);
