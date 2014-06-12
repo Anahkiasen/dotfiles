@@ -23,6 +23,6 @@
 		"grunt-svgmin": "*",
 		"grunt-tinypng": "*",
 		"grunt-typescript": "*",
-    "jit-grunt": "*"
+		"jit-grunt": "*"
 	}
 }
