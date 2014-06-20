@@ -37,13 +37,14 @@ module.exports = function(grunt) {
 
 		paths: {
 			original: {
-				css   : '<%= app %>/css',
-				js    : '<%= app %>/js',
-				ts    : '<%= app %>/ts',
-				sass  : '<%= app %>/sass',
-				fonts : '<%= app %>/fonts',
-				img   : '<%= app %>/img',
-				svg   : '<%= app %>/svg',
+				css       : '<%= app %>/css',
+				js        : '<%= app %>/js',
+				ts        : '<%= app %>/ts',
+				sass      : '<%= app %>/sass',
+				fonts     : '<%= app %>/fonts',
+				img       : '<%= app %>/img',
+				svg       : '<%= app %>/svg',
+				templates : '<%= app %>/templates',
 			},
 			compiled: {
 				css   : '<%= builds %>/css',
