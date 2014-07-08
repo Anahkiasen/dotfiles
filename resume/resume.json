@@ -1,0 +1,129 @@
+{
+	"bio": {
+		"firstName": "Maxime",
+		"lastName": "Fabre",
+		"email": {
+			"work": "maxime@madewithlove.be",
+			"personal": "ehtnam6@gmail.com"
+		},
+		"phone": {
+			"personal": "0671650503"
+		},
+		"summary": "I'm serious, dedicated, and up to date on the latest moves in a field changing day after day. To stay relevant I follow a number of designers and developpers on social networks like Twitter. I want to understand, and not just copy/paste – I don't want to just do my job, I want to do it well.",
+		"location": {
+			"city": "Saint Etienne",
+			"countryCode": "FR",
+			"state": "France"
+		},
+		"websites": {
+			"blog": "http://blogs.wefrag.com/Anahkiasen",
+			"portfolio": "http://autopergamene.eu/en"
+		},
+		"profiles": {
+			"github": "Anahkiasen",
+			"twitter": "anahkiasen",
+			"facebook": "anahkiasen",
+			"flickr": "anahkiasen",
+			"last.fm": "anahkiasen",
+			"steam": "anahkiasen",
+			"soundcloud": "anahkiasen"
+		}
+	},
+	"work": [
+		{
+			"company": "Madewithlove",
+			"position": "Software Engineer",
+			"website": "http://madewithlove.be",
+			"startDate": "2013-08-21",
+			"endDate": "",
+			"summary": "App architecture and back-end development",
+			"highlights": []
+		},
+		{
+			"company": "Glose",
+			"position": "Back-end developper",
+			"website": "https://glose.com/",
+			"startDate": "2013-05-26",
+			"endDate": "2013-08-11",
+			"summary": "Help in developping a new reading experience",
+			"highlights": []
+		},
+		{
+			"company": "Le Principe de Stappler",
+			"position": "Front-end and back-end webdevelopper",
+			"startDate": "2009-10-13",
+			"endDate": "2013-03-27",
+			"summary": "Leading the web branch and developping websites",
+			"highlights": []
+		}
+	],
+	"education": [
+	],
+	"awards": [
+	],
+	"publications": [
+	],
+	"skills": [
+		{
+			"name": "Concepts and knowledge",
+			"level": "Master",
+			"keywords": [
+				"MVC architecture",
+				"Master of OOP",
+				"Application design and web architecture",
+				"API design",
+				"Live AJAX websites",
+				"Responsive design",
+				"Decoupling techniques in CSS (SMACKS, OOCSS, BEM)"
+			]
+		},
+		{
+			"name": "Web Development",
+			"level": "Master",
+			"keywords": [
+				"HTML",
+				"CSS, LESS and SASS",
+				"Javascript, Coffeescript and Typescript",
+				"PHP 5.3+",
+				"MySQL/SQLite, MongoDB (NoSQL)",
+				"Ruby (basics)",
+				"Bash and zsh",
+				"ActionScript 2"
+			]
+		},
+		{
+			"name": "Frameworks and CMS",
+			"level": "Master",
+			"keywords": [
+				"Laravel 3/4",
+				"Angular",
+				"Backbone",
+				"Slim"
+			]
+		},
+		{
+			"name": "Softwares",
+			"level": "Master",
+			"keywords": [
+				"PHPStorm",
+				"Sublime Text 3",
+				"Adobe CS",
+				"Google Sketchup",
+				"Sony Vegas"
+			]
+		}
+	],
+	"hobbies": [
+		{
+			"name": "Hobbies",
+			"keywords": [
+				"Photography",
+				"Guitar and composing",
+				"Drawing",
+				"Writing short stories"
+			]
+		}
+	],
+	"references": [
+	]
+}
