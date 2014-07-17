@@ -27,36 +27,36 @@ module.exports = function(grunt) {
 	////////////////////////////////////////////////////////////////////
 
 	grunt.registerTask('minify', 'Minify assets', [
-		'cssmin',
-		'uglify',
+		'newer:cssmin',
+		'newer:uglify',
 	]);
 
 	grunt.registerTask('images', 'Recompress images', [
-		'svgmin',
-		'tinypng',
+		'newer:svgmin',
+		'newer:tinypng',
 	]);
 
 	// By filetype
 	////////////////////////////////////////////////////////////////////
 
 	grunt.registerTask('md', 'Build contents', [
-		'concat:md',
-		'markdown',
-		'prettify',
+		'newer:concat:md',
+		'newer:markdown',
+		'newer:prettify',
 	]);
 
 	grunt.registerTask('js', 'Build scripts', [
-		'typescript',
+		'newer:typescript',
 		'jshint',
-		'concat:js',
+		'newer:concat:js',
 	]);
 
 	grunt.registerTask('css', 'Build stylesheets', [
-		'compass:compile',
+		'newer:compass:compile',
 		'csslint',
 		'csscss',
-		'autoprefixer',
-		'concat:css',
+		'newer:autoprefixer',
+		'newer:concat:css',
 	]);
 
 }

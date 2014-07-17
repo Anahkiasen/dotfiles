@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
 
 	// Load modules
-	grunt.loadNpmTasks('grunt-notify');
+	grunt.loadNpmTasks('grunt-newer');
 	require('jit-grunt')(grunt);
 
 	/**

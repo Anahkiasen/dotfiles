@@ -19,7 +19,7 @@
 		"grunt-contrib-uglify": "*",
 		"grunt-contrib-watch": "*",
 		"grunt-csscss": "*",
-		"grunt-notify": "*",
+		"grunt-newer": "*",
 		"grunt-svgmin": "*",
 		"grunt-tinypng": "*",
 		"grunt-typescript": "*",
