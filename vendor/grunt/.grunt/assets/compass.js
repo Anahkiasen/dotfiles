@@ -1,15 +1,14 @@
 module.exports = {
 	options: {
-		appDir             : "<%= app %>/",
-		cssDir             : "css",
-		generatedImagesDir : "img/sprite/generated",
-		imagesDir          : "img",
-		outputStyle        : 'nested',
-		noLineComments     : true,
-		relativeAssets     : true,
-		assetCacheBuster   : false,
-		sourcemap          : true,
-		require            : ['susy', 'breakpoint', 'sass-globbing'],
+		appDir            : "<%= app %>/",
+		cssDir            : "css",
+		generatedImagesDir: "img/sprite/generated",
+		imagesDir         : "img",
+		outputStyle       : 'nested',
+		noLineComments    : true,
+		relativeAssets    : true,
+		assetCacheBuster  : false,
+		require           : ['susy', 'sass-globbing', 'breakpoint'],
 	},
 
 	/**
@@ -24,5 +23,10 @@ module.exports = {
 	/**
 	 * Compile Sass files
 	 */
-	compile: {},
+	compile: {
+		options: {
+			sourcemap: true,
+		},
+		src    : '<%= paths.original.sass %>/**/*.scss'
+	},
 };
