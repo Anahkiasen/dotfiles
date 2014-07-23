@@ -1,7 +1,7 @@
 module.exports = {
 	options: {
 		target       : 'es5',
-		sourceMap    : false,
+		sourceMap    : true,
 		declaration  : false,
 		comments     : false,
 		indentStep   : 2,
