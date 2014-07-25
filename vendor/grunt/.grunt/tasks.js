@@ -38,7 +38,7 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('lint', 'Lint the files', [
 		'tslint',
-		'scssint',
+		'scsslint',
 		'csslint',
 		'csscss',
 	]);
