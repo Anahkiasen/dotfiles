@@ -36,6 +36,13 @@ module.exports = function(grunt) {
 		'newer:tinypng',
 	]);
 
+	grunt.registerTask('lint', 'Lint the files', [
+		'tslint',
+		'scssint',
+		'csslint',
+		'csscss',
+	]);
+
 	// By filetype
 	////////////////////////////////////////////////////////////////////
 
@@ -47,14 +54,11 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('js', 'Build scripts', [
 		'newer:typescript',
-		'jshint',
 		'newer:concat:js',
 	]);
 
 	grunt.registerTask('css', 'Build stylesheets', [
 		'newer:compass:compile',
-		'csslint',
-		'csscss',
 		'newer:autoprefixer',
 		'newer:concat:css',
 	]);
