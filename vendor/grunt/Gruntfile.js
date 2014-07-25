@@ -2,7 +2,11 @@ module.exports = function(grunt) {
 
 	// Load modules
 	grunt.loadNpmTasks('grunt-newer');
-	require('jit-grunt')(grunt);
+	require('jit-grunt')(grunt, {
+		ngtemplates      : 'grunt-angular-templates',
+		useminPrepare    : 'grunt-usemin',
+		scsslint         : 'grunt-scss-lint',
+	});
 
 	/**
 	 * Loads all available tasks options
