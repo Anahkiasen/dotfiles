@@ -48,11 +48,14 @@ cask:
   - all2mp3
   - atom
   - betterzipql
+  - concentrate
   - cyberduck
   - dropbox
   - firefox
   - flash
+  - flickr-uploadr
   - google-chrome
+  - google-drive
   - imageoptim
   - iterm2
   - kaleidoscope
@@ -61,6 +64,7 @@ cask:
   - mou
   - opera
   - phpstorm-eap
+  - poedit
   - qlmarkdown
   - qlstephen
   - quicklook-csv
@@ -77,6 +81,7 @@ cask:
   - steam
   - sublime-text3
   - the-unarchiver
+  - tiled
   - tvshows
   - unity-web-player
   - utorrent
