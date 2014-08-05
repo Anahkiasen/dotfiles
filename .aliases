@@ -28,6 +28,7 @@ alias psr="php-cs-fixer"
 # Git
 alias git=hub
 alias gdt="git difftool"
+alias gfpt="git fetch -pt"
 alias gaa="git add --all"
 alias gcaa="gca --amend"
 alias gcaan="gcaa --no-edit"
