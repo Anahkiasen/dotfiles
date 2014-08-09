@@ -54,7 +54,7 @@ function fs() {
 
 # Fixes a repository with PSR and tabs
 function psrtabs() {
-  php-cs-fixer fix $1 --level=all --fixers=-indentation
+  php-cs-fixer fix $1 --level="all" --fixers="-indentation,-new_with_braces"
 }
 
 # Mount a remote server to local
