@@ -3,7 +3,7 @@ module.exports = {
 		target       : 'es5',
 		sourceMap    : true,
 		declaration  : false,
-		comments     : false,
+		comments     : true,
 		indentStep   : 2,
 		useTabIndent : true,
 		basePath     : '<%= paths.original.ts %>'
