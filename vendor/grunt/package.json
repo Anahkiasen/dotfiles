@@ -6,10 +6,11 @@
 		"grunt-cli": "*",
 		"glob": "*"
 	},
-	"devDependencies": {
+    "devDependencies": {
     "grunt-angular-templates": "*",
     "grunt-autoprefixer": "*",
     "grunt-bower-task": "*",
+    "grunt-concurrent": "^1.0.0",
     "grunt-contrib-clean": "*",
     "grunt-contrib-compass": "*",
     "grunt-contrib-concat": "*",
@@ -21,6 +22,7 @@
     "grunt-csscss": "*",
     "grunt-newer": "*",
     "grunt-ng-annotate": "*",
+    "grunt-phplint": "0.0.5",
     "grunt-scss-lint": "*",
     "grunt-shell": "*",
     "grunt-styleguide": "*",

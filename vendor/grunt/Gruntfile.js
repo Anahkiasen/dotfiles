@@ -2,6 +2,8 @@ module.exports = function(grunt) {
 
 	// Load modules
 	grunt.loadNpmTasks('grunt-newer');
+	grunt.loadNpmTasks('grunt-concurrent');
+
 	require('jit-grunt')(grunt, {
 		ngtemplates      : 'grunt-angular-templates',
 		useminPrepare    : 'grunt-usemin',

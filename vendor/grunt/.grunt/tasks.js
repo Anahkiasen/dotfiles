@@ -5,38 +5,32 @@ module.exports = function(grunt) {
 	////////////////////////////////////////////////////////////////////
 
 	grunt.registerTask('default', 'Build assets for local', [
-		'css',
-		'js',
-		'copy',
+		'concurrent:build',
 	]);
 
 	grunt.registerTask('rebuild', 'Rebuild all assets from scratch', [
-		'clean',
-		'compass:clean',
-		'default',
+		'concurrent:clean',
+		'concurrent:build',
 	]);
 
 	grunt.registerTask('production', 'Build assets for production', [
-		'js',
-		'concat:css',
+		'concurrent:images',
+		'rebuild',
+		'ngAnnotate',
+		'shell:assets',
+		'useminPrepare',
+		'ngtemplates',
+		'concat',
 		'copy',
-		'minify'
+		'concurrent:minify',
+		'usemin',
 	]);
 
 	// Flow
 	////////////////////////////////////////////////////////////////////
 
-	grunt.registerTask('minify', 'Minify assets', [
-		'newer:cssmin',
-		'newer:uglify',
-	]);
-
-	grunt.registerTask('images', 'Recompress images', [
-		'newer:svgmin',
-		'newer:tinypng',
-	]);
-
 	grunt.registerTask('lint', 'Lint the files', [
+		'phplint',
 		'tslint',
 		'scsslint',
 		'csslint',
@@ -52,15 +46,9 @@ module.exports = function(grunt) {
 		'newer:prettify',
 	]);
 
-	grunt.registerTask('js', 'Build scripts', [
-		'newer:typescript',
-		'newer:concat:js',
-	]);
-
 	grunt.registerTask('css', 'Build stylesheets', [
 		'newer:compass:compile',
 		'newer:autoprefixer',
-		'newer:concat:css',
 	]);
 
 }
