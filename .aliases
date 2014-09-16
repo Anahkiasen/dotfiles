@@ -26,7 +26,7 @@ alias phpdoc="sudo phpdoc.php run -d src -t docs --template=~/.composer/vendor/p
 alias psr="php-cs-fixer"
 
 # Git
-alias git=hub
+function git(){hub $@} # Prevents autocompletion bug
 alias gdt="git difftool"
 alias gfpt="git fetch -pt"
 alias gaa="git add --all"
