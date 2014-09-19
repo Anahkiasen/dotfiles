@@ -51,6 +51,10 @@ module.exports = function(grunt) {
 		'newer:prettify',
 	]);
 
+	grunt.registerTask('js', 'Build scripts', [
+		'concurrent:js'
+	]);
+
 	grunt.registerTask('css', 'Build stylesheets', [
 		'newer:compass:compile',
 		'newer:autoprefixer',

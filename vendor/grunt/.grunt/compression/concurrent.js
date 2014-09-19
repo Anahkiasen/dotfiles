@@ -7,7 +7,7 @@ module.exports = {
 	clean: ['clean:local', 'clean:front', 'compass:clean'],
 
 	// Build the assets
-	build: ['css', 'js', 'svg', 'copy'],
+	build: ['css', 'js', 'copy'],
 
 	// Compression
 	//////////////////////////////////////////////////////////////////////
@@ -19,8 +19,6 @@ module.exports = {
 	//////////////////////////////////////////////////////////////////////
 
 	js: [
-		'newer:nggettext_compile',
-		'newer:shell:routes',
 		'newer:typescript',
 	],
 
