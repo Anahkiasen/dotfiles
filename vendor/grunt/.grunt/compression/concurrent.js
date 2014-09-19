@@ -12,9 +12,6 @@ module.exports = {
 	// Compression
 	//////////////////////////////////////////////////////////////////////
 
-	// Minifies assets
-	minify: ['cssmin', 'uglify'],
-
 	// Compresses images
 	images: ['newer:svgmin', 'newer:tinypng'],
 

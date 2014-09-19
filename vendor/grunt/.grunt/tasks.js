@@ -22,12 +22,17 @@ module.exports = function(grunt) {
 		'ngtemplates',
 		'concat',
 		'copy',
-		'concurrent:minify',
+		'minify',
 		'usemin',
 	]);
 
 	// Flow
 	////////////////////////////////////////////////////////////////////
+
+	grunt.registerTask('minify', 'Minify the files', [
+		'cssmin',
+		'uglify'
+	]);
 
 	grunt.registerTask('lint', 'Lint the files', [
 		'phplint',

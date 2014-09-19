@@ -1,6 +1,6 @@
 module.exports = {
 	options: {
-		config : '.grunt/.scss-lint.yml',
+		config : '<%= grunt %>/.scss-lint.yml',
 		compact: true,
 	},
 
