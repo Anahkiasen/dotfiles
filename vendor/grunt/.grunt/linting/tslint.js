@@ -36,6 +36,6 @@ module.exports = {
 	},
 
 	dist: {
-		src: ['<%= paths.original.ts %>/**/*.ts', '!<%= paths.original.ts %>/_definitions/**/*.d.ts'],
+		src: ['<%= files.ts %>', '!<%= paths.original.ts %>/_definitions/**/*.d.ts'],
 	}
 };

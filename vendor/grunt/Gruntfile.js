@@ -40,6 +40,7 @@ module.exports = function(grunt) {
 		app        : 'public/app',
 		builds     : 'public/builds',
 		components : 'public/components',
+		views      : 'app/views',
 
 		paths: {
 			original: {
@@ -59,17 +60,14 @@ module.exports = function(grunt) {
 				img   : '<%= builds %>/img',
 				svg   : '<%= builds %>/svg',
 			},
-			components: {
-				jquery    : '<%= components %>/jquery/dist/jquery.js',
-				icomoon   : '<%= components %>/icomoon/style.css',
-				backbone  : '<%= components %>/backbone/backbone.js',
-				bootstrap : {
-					css   : '<%= components %>/bootstrap/dist/css/bootstrap.css',
-					fonts : '<%= components %>/bootstrap/dist/fonts',
-					js    : '<%= components %>/bootstrap/dist/js/bootstrap.js',
-				},
-			}
 		},
+
+		files: {
+			css : '<%= paths.original.css %>/**/*.css',
+			sass: '<%= paths.original.sass %>/**/*.scss',
+			js  : '<%= paths.original.js %>/**/*.js',
+			ts  : '<%= paths.original.ts %>/**/*.ts',
+		}
 	};
 
 	// Load all tasks

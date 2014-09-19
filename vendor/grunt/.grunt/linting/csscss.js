@@ -8,6 +8,6 @@ module.exports = {
 	},
 
 	dist: {
-		src: '<%= paths.original.css %>/*.css'
+		src: '<%= files.css %>'
 	}
 };

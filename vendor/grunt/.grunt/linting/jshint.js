@@ -31,5 +31,5 @@ module.exports = {
 		predef  : ['Modernizr'],
 	},
 
-	all: ['<%= paths.original.js %>/*'],
+	all: ['<%= files.js %>'],
 };

@@ -10,7 +10,7 @@ module.exports = {
 	},
 
 	dest: {
-		src    : ['<%= paths.original.ts %>/**/*.ts'],
+		src    : '<%= files.ts %>',
 		dest   : '<%= paths.original.js %>',
 	}
 };

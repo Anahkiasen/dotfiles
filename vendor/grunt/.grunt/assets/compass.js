@@ -27,6 +27,6 @@ module.exports = {
 		options: {
 			sourcemap: true,
 		},
-		src    : '<%= paths.original.sass %>/**/*.scss'
+		src    : '<%= files.sass %>'
 	},
 };

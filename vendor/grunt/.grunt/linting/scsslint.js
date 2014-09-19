@@ -6,7 +6,7 @@ module.exports = {
 
 	dist: {
 		src: [
-			'<%= paths.original.sass %>/**/*.scss',
+			'<%= files.sass %>',
 		],
 	}
 };

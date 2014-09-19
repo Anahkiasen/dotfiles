@@ -10,5 +10,5 @@ module.exports = {
 		},
 	},
 
-	html: 'app/views/**/*.twig',
+	html: '<%= views %>/**/*.twig',
 };

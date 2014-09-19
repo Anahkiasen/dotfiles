@@ -22,6 +22,6 @@ module.exports = {
 			'universal-selector'         : false,
 			'fallback-colors'            : false,
 		},
-		src: ['<%= paths.original.css %>/*']
+		src: '<%= files.css %>'
 	},
 };

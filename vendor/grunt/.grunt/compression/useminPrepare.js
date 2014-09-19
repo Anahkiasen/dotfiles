@@ -5,6 +5,6 @@ module.exports = {
 	},
 
 	dist: {
-		src: 'app/views/**/*.twig',
+		src: '<%= views %>/**/*.twig',
 	},
 };
