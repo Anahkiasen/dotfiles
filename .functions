@@ -11,7 +11,7 @@ function reclone() {
   branch=${2:$default_branch}
 
   rm -rf $repository
-  git clone -b $2 $repository -p
+  git clone -b $2 $repository --depth 5 -p
 }
 
 # Reclone a repository and go to it
@@ -54,25 +54,5 @@ function fs() {
 
 # Fixes a repository with PSR and tabs
 function psrtabs() {
-  php-cs-fixer fix $1 --level="symfony" --fixers="-indentation,-new_with_braces"
-}
-
-# Mount a remote server to local
-function shmount() {
-  host=$1
-  folder=""
-
-  # Pick correct folder depending on host
-  if [ $host = 'Madewithlove/Nobrow/Staging' ]; then
-    folder="/opt/www/vs08056/web/nobrow.moja.madewithlovehq.com"
-  fi
-
-  sshfs $host:$folder ~/Sites/_remote -o transform_symlinks,noappledouble,auto_cache,reconnect,defer_permissions,negative_vncache,volname=_remote
-  cd ~/Sites/_remote
-  echo "Mounted $1"
-}
-
-# Unmount a remote server
-shumount() {
-  umount ~/Sites/_remote
+  php-cs-fixer fix $1 --level="symfony" --fixers="-braces,-indentation"
 }
