@@ -32,6 +32,7 @@
 		"grunt-styleguide": "^0.2.15",
 		"grunt-svgmin": "^1.0.0",
 		"grunt-tinypng": "^0.5.3",
+		"grunt-tsd": "^0.1.0",
 		"grunt-tslint": "^0.4.2",
 		"grunt-typescript": "^0.3.8",
 		"grunt-usemin": "^2.4.0",

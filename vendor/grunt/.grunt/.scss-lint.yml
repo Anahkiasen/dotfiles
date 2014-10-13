@@ -1,8 +1,5 @@
 linters:
   BorderZero:
-    enabled: false
-
-  CapitalizationInSelector:
     enabled: true
 
   ColorKeyword:
@@ -19,6 +16,10 @@ linters:
 
   DuplicateProperty:
     enabled: true
+
+  ElsePlacement:
+    enabled: true
+    style: same_line
 
   EmptyLineBetweenBlocks:
     enabled: true
@@ -46,8 +47,9 @@ linters:
     enabled: true
 
   Indentation:
-    enabled: false
-    width: 2
+    enabled: true
+    character: tab # or 'tab'
+    width: 1
 
   LeadingZero:
     enabled: true
@@ -67,6 +69,7 @@ linters:
   PropertySortOrder:
     enabled: true
     order: concentric
+    ignore_unspecified: false
 
   PropertySpelling:
     enabled: true
@@ -76,8 +79,16 @@ linters:
     enabled: true
     max_depth: 6
 
+  SelectorFormat:
+    enabled: true
+    convention: hyphenated_lowercase # or 'BEM', or 'snake_case', or 'camel_case', or a regex pattern
+
   Shorthand:
     enabled: true
+
+  SingleLinePerProperty:
+    enabled: true
+    allow_single_line_rule_sets: true
 
   SingleLinePerSelector:
     enabled: true
@@ -87,6 +98,7 @@ linters:
 
   SpaceAfterPropertyColon:
     enabled: true
+    style: one_space # or 'no_space', or 'at_least_one_space', or 'aligned'
 
   SpaceAfterPropertyName:
     enabled: true
@@ -103,10 +115,16 @@ linters:
     enabled: true
     style: single_quotes # or double_quotes
 
-  TrailingSemicolonAfterPropertyValue:
+  TrailingSemicolon:
     enabled: true
 
+  TrailingZero:
+    enabled: false
+
   UnnecessaryMantissa:
+    enabled: true
+
+  UnnecessaryParentReference:
     enabled: true
 
   UrlFormat:
