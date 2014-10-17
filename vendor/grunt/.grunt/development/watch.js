@@ -13,7 +13,7 @@ module.exports = {
 		tasks: 'copy',
 	},
 	js: {
-		files: ['<%= files.ts', '<%= paths.original.templates %>/**/*'],
+		files: ['<%= files.ts %>', '<%= paths.original.templates %>/**/*'],
 		tasks: 'js',
 	},
 	css: {
