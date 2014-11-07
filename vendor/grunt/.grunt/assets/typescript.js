@@ -4,8 +4,6 @@ module.exports = {
 		sourceMap    : true,
 		declaration  : false,
 		comments     : true,
-		indentStep   : 2,
-		useTabIndent : true,
 		basePath     : '<%= paths.original.ts %>'
 	},
 
