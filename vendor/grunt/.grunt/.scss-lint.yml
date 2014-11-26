@@ -1,4 +1,9 @@
 linters:
+  BangFormat:
+    enabled: true
+    space_before_bang: true
+    space_after_bang: false
+
   BorderZero:
     enabled: true
 
@@ -19,7 +24,7 @@ linters:
 
   ElsePlacement:
     enabled: true
-    style: same_line
+    style: same_line # or 'new_line'
 
   EmptyLineBetweenBlocks:
     enabled: true
@@ -46,6 +51,11 @@ linters:
   IdWithExtraneousSelector:
     enabled: true
 
+  ImportPath:
+    enabled: true
+    leading_underscore: false
+    filename_extension: false
+
   Indentation:
     enabled: true
     character: tab # or 'tab'
@@ -63,8 +73,12 @@ linters:
     enabled: true
     convention: hyphenated_lowercase # or 'BEM', or a regex pattern
 
-  PlaceholderInExtend:
+  NestingDepth:
     enabled: true
+    max_depth: 6
+
+  PlaceholderInExtend:
+    enabled: false
 
   PropertySortOrder:
     enabled: true
@@ -75,13 +89,30 @@ linters:
     enabled: true
     extra_properties: ['break-inside']
 
+  QualifyingElement:
+    enabled: true
+    allow_element_with_attribute: true
+    allow_element_with_class: true
+    allow_element_with_id: false
+
   SelectorDepth:
     enabled: true
     max_depth: 6
 
   SelectorFormat:
     enabled: true
-    convention: hyphenated_lowercase # or 'BEM', or 'snake_case', or 'camel_case', or a regex pattern
+    convention: BEM # or 'BEM', or 'snake_case', or 'camel_case', or a regex pattern
+    ignored_names:
+      - "tablesorter-headerAsc"
+      - "tablesorter-headerDesc"
+      - "noUi-horizontal"
+      - "noUi-origin"
+      - "noUi-handle"
+      - "noUi-horizontal"
+      - "nivoSlider"
+      - "nivo-controlNav"
+      - "ace_editor"
+      - "current_date"
 
   Shorthand:
     enabled: true
@@ -105,6 +136,7 @@ linters:
 
   SpaceBeforeBrace:
     enabled: true
+    style: space
     allow_single_line_padding: false
 
   SpaceBetweenParens:
@@ -132,6 +164,12 @@ linters:
 
   UrlQuotes:
     enabled: true
+
+  VendorPrefixes:
+    enabled: true
+    identifier_list: base
+    include: []
+    exclude: []
 
   ZeroUnit:
     enabled: true
