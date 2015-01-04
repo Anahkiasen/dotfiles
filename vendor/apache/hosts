@@ -8,14 +8,18 @@ fe80::1%lo0     localhost
 
 # Applications ----------------------------------------------------- /
 
-127.0.0.1 autopergamene.dev
-127.0.0.1 localhost
 127.0.0.1 adam.dev
+127.0.0.1 localhost
+127.0.0.1 mougins.dev
+127.0.0.1 toran.dev
 127.0.0.1 survidle.dev
 
+192.168.22.10  remindme.dev
+192.168.56.101 addapp.dev
+192.168.56.102 stappler.dev
+192.168.56.104 autopergamene.dev
 192.168.56.106 thebottle.dev
 192.168.56.107 quickvox.dev
 192.168.56.111 nobrow.dev
-192.168.56.101 addapp.dev
 192.168.56.113 weholi.dev
-192.168.56.114 stappler.dev
+192.168.56.114 madewithlove.dev
