@@ -1,22 +1,22 @@
 module.exports = {
 	options: {
-		livereload : true,
-		interrupt  : true,
+		livereload: true,
+		interrupt : true,
 	},
 
 	grunt: {
 		files: ['Gruntfile.js', '<%= grunt %>/**/*'],
 		tasks: 'default',
 	},
-	img: {
+	img  : {
 		files: '<%= paths.original.img %>/**/*',
 		tasks: 'copy',
 	},
-	js: {
+	js   : {
 		files: ['<%= files.ts %>', '<%= paths.original.templates %>/**/*'],
 		tasks: 'js',
 	},
-	css: {
+	css  : {
 		files: '<%= files.sass %>',
 		tasks: 'css',
 	},

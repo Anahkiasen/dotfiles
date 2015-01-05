@@ -4,7 +4,7 @@ module.exports = {
 			css: function (block) {
 				return '{{ HTML.style("' + block.dest + '")|raw }}';
 			},
-			js: function (block) {
+			js : function (block) {
 				return '{{ HTML.script("' + block.dest + '")|raw }}';
 			},
 		},

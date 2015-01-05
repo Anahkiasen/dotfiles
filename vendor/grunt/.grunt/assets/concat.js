@@ -6,7 +6,7 @@ module.exports = {
 			],
 		},
 	},
-	js: {
+	js : {
 		files: {
 			'<%= paths.compiled.js %>/scripts.js': [
 				'<%= files.js %>',
