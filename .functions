@@ -54,5 +54,10 @@ function fs() {
 
 # Fixes a repository with PSR and tabs
 function psrtabs() {
-  php-cs-fixer fix $1 --level="symfony" --fixers="-braces,-indentation,concat_with_spaces,multiline_spaces_before_semicolon,ordered_use"
+  php-cs-fixer fix $1 --level="symfony" --fixers="-braces,-indentation,-phpdoc_indent,-yoda_conditions,align_equals,multiline_spaces_before_semicolon,ordered_use"
+}
+
+# Fixes a repository with PSR and tabs
+function psrfix() {
+  php-cs-fixer fix $1 --level="symfony" --fixers="-yoda_conditions,align_equals,multiline_spaces_before_semicolon,ordered_use"
 }
