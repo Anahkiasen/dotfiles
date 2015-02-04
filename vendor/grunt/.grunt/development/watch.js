@@ -8,6 +8,10 @@ module.exports = {
 		files: ['Gruntfile.js', '<%= grunt %>/**/*'],
 		tasks: 'default',
 	},
+	api: {
+		files: ['<%= paths.docs.api %>/blueprint/*.apib'],
+		tasks: 'api',
+	},
 	img  : {
 		files: '<%= paths.original.img %>/**/*',
 		tasks: 'copy',

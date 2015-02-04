@@ -38,11 +38,15 @@ module.exports = function (grunt) {
 
 		grunt     : '.grunt',
 		app       : 'public/app',
+		docs      : 'docs',
 		builds    : 'public/builds',
 		components: 'public/components',
 		views     : 'app/views',
 
 		paths: {
+			docs: {
+				api: '<%= docs %>/api',
+			},
 			original: {
 				css      : '<%= app %>/css',
 				js       : '<%= app %>/js',

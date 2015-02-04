@@ -49,6 +49,11 @@ module.exports = function (grunt) {
 	// By filetype
 	////////////////////////////////////////////////////////////////////
 
+	grunt.registerTask('api', 'Build API docs', [
+		'newer:concat:apib',
+		'newer:aglio',
+	]);
+
 	grunt.registerTask('md', 'Build contents', [
 		'newer:concat:md',
 		'newer:markdown',

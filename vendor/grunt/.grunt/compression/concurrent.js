@@ -7,7 +7,7 @@ module.exports = {
 	clean: ['clean:local', 'clean:front', 'compass:clean'],
 
 	// Build the assets
-	build: ['css', 'js', 'copy'],
+	build: ['api', 'css', 'js', 'copy'],
 
 	// Filetypes
 	//////////////////////////////////////////////////////////////////////
