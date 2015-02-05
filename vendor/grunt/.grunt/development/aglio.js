@@ -1,9 +1,12 @@
 module.exports = {
 	dist: {
-		files    : {
-			"<%= paths.docs.api %>/index.html": ["<%= paths.docs.api %>/blueprint/index.apib"]
+		options: {
+			theme    : "flatly-multi",
+			seperator: "\n"
 		},
-		theme    : "flatly-multi",
-		seperator: "\n"
+
+		files    : {
+			"<%= paths.docs.api %>/index.html": ["<%= paths.docs.api %>/index.apib"]
+		},
 	}
 };
