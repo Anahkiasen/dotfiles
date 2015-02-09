@@ -6,9 +6,13 @@ linters:
 
   BorderZero:
     enabled: true
+    convention: none # or `none`
 
   ColorKeyword:
-    enabled: false
+    enabled: true
+
+  ColorVariable:
+    enabled: true
 
   Comment:
     enabled: true
@@ -34,7 +38,7 @@ linters:
     enabled: true
 
   FinalNewline:
-    enabled: false
+    enabled: true
     present: true
 
   HexLength:
@@ -51,6 +55,9 @@ linters:
   IdSelector:
     enabled: true
 
+  ImportantRule:
+    enabled: true
+
   ImportPath:
     enabled: true
     leading_underscore: false
@@ -58,6 +65,7 @@ linters:
 
   Indentation:
     enabled: true
+    allow_non_nested_indentation: false
     character: tab # or 'tab'
     width: 1
 
@@ -81,10 +89,16 @@ linters:
   PlaceholderInExtend:
     enabled: false
 
+  PropertyCount:
+    enabled: false
+    include_nested: false
+    max_properties: 10
+
   PropertySortOrder:
     enabled: true
     order: concentric
     ignore_unspecified: false
+    separate_groups: false
 
   PropertySpelling:
     enabled: true
@@ -102,7 +116,7 @@ linters:
 
   SelectorFormat:
     enabled: true
-    convention: BEM # or 'BEM', or 'snake_case', or 'camel_case', or a regex pattern
+    convention: hyphenated_BEM # or 'BEM', or 'hyphenated_BEM', or 'snake_case', or 'camel_case', or a regex pattern
     ignored_names:
       - "tablesorter-headerAsc"
       - "tablesorter-headerDesc"
@@ -137,7 +151,7 @@ linters:
 
   SpaceBeforeBrace:
     enabled: true
-    style: space
+    style: space # or 'new_line'
     allow_single_line_padding: false
 
   SpaceBetweenParens:
@@ -165,6 +179,10 @@ linters:
 
   UrlQuotes:
     enabled: true
+
+  VariableForProperty:
+    enabled: false
+    properties: []
 
   VendorPrefixes:
     enabled: true
