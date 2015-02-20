@@ -1,9 +1,3 @@
-
-# Create a new directory and enter it
-function mkd() {
-  mkdir -p "$@" && cd "$@"
-}
-
 # Reclone a repository
 function reclone() {
   default_branch=master
@@ -38,26 +32,18 @@ function usephp() {
   sudo apachectl -k start
 }
 
-# Determine size of a file or total size of a directory
-function fs() {
-  if du -b /dev/null > /dev/null 2>&1; then
-    local arg=-sbh
-  else
-    local arg=-sh
-  fi
-  if [[ -n "$@" ]]; then
-    du $arg -- "$@"
-  else
-    du $arg .[^.]* *
-  fi
-}
+# PHP CS FIXER
+# //////////////////////////////////////////////////////////////////////
+
+PHP_CS_FIXER_LEVEL="symfony"
+PHP_CS_FIXER_CONTRIB="align_double_arrow,align_equals,concat_with_spaces,ereg_to_preg,header_comment,multiline_spaces_before_semicolon,no_blank_lines_before_namespace,ordered_use,php4_constructor,phpdoc_order,phpdoc_var_to_type,short_array_syntax"
 
 # Fixes a repository with PSR and tabs
 function psrtabs() {
-  php-cs-fixer fix $1 --level="symfony" --fixers="-braces,-indentation,-phpdoc_indent,-yoda_conditions,align_equals,multiline_spaces_before_semicolon,ordered_use"
+  php-cs-fixer fix $1 --level="$PHP_CS_FIXER_LEVEL" --fixers="-braces,-indentation,-phpdoc_indent,-yoda_conditions,$PHP_CS_FIXER_CONTRIB"
 }
 
 # Fixes a repository with PSR and tabs
 function psrfix() {
-  php-cs-fixer fix $1 --level="symfony" --fixers="-yoda_conditions,align_equals,multiline_spaces_before_semicolon,ordered_use"
+  php-cs-fixer fix $1 --level="$PHP_CS_FIXER_LEVEL" --fixers="-yoda_conditions,$PHP_CS_FIXER_CONTRIB"
 }
