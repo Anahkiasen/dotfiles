@@ -43,7 +43,7 @@ function psrtabs() {
   php-cs-fixer fix $1 --level="$PHP_CS_FIXER_LEVEL" --fixers="-braces,-indentation,-phpdoc_indent,-yoda_conditions,$PHP_CS_FIXER_CONTRIB"
 }
 
-# Fixes a repository with PSR and tabs
+# Fixes a repository with PSR and spaces
 function psrfix() {
   php-cs-fixer fix $1 --level="$PHP_CS_FIXER_LEVEL" --fixers="-yoda_conditions,$PHP_CS_FIXER_CONTRIB"
 }
