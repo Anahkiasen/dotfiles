@@ -60,7 +60,7 @@ alias recompass="compass clean && compass compile"
 # //////////////////////////////////////////////////////////////////////
 
 # IDEs
-alias pstt="pst ."
+alias pstt="pstorm ."
 
 alias chrome="/usr/bin/open -a '/Applications/Google Chrome.app'"
 alias bootstrap="cd $HOME/Dropbox/WEB\ DESIGN/_github/bootstrap && jekyll serve --port 1234"

@@ -1,2 +1,2 @@
 [xdebug]
-zend_extension="/usr/local/Cellar/php56-xdebug/2.2.7/xdebug.so"
+zend_extension="/usr/local/opt/php56-xdebug/xdebug.so"
