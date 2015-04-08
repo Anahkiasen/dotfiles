@@ -14,7 +14,6 @@ module.exports = function (grunt) {
 	]);
 
 	grunt.registerTask('production', 'Build assets for production', [
-		'concurrent:images',
 		'rebuild',
 		'ngAnnotate',
 		'shell:assets',
