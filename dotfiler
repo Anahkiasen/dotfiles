@@ -33,29 +33,6 @@ case "$1" in
     source $DOTFILES/scripts/setup.sh
   ;;
 
-  # Upgrade core files
-  upgrade)
-    source $DOTFILES/scripts/upgrade.sh
-  ;;
-
-  # Update and sync dependencies
-  update)
-    source $DOTFILES/scripts/upgrade.sh
-    source $DOTFILES/scripts/update.sh
-  ;;
-
-  # Remove Dotfiler
-  uninstall)
-    ruby $DOTFILES/scripts/uninstall.rb
-  ;;
-
-  # Reinstall Dotfiler
-  reinstall)
-    source $DOTFILES/scripts/uninstall.sh
-    source $DOTFILES/scripts/setup.sh
-    source $DOTFILES/scripts/update.sh
-  ;;
-
   grunt)
     source $DOTFILES/scripts/grunt.sh
   ;;
@@ -64,8 +41,5 @@ case "$1" in
   *)
     info "Dotfiler - Setup and upgrade helper"
     info "      dotfiler setup     - Setup dotfiler and its dependencies"
-    info "      dotfiler update    - Update Dotfiler and its dependencies"
-    info "      dotfiler upgrade   - Update Dotfiler itself"
-    info "      dotfiler uninstall - Remove Dotfiler"
   ;;
 esac
