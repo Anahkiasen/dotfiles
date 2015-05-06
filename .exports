@@ -1,6 +1,5 @@
-
-# Use Sublime Text as default editor
-export EDITOR='subl -w'
+# Use Atom as default editor
+export EDITOR='atom -w'
 
 # Prefer US English and use UTF-8
 export LANG="en_US"
@@ -11,3 +10,4 @@ export GREP_OPTIONS="--color=auto"
 
 # Hub
 export GITHUB_USER="Anahkiasen"
+export HOMEBREW_GITHUB_API_TOKEN=8bd6a742a843ff1382d33207ee1cd884d0bd7063

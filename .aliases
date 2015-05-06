@@ -22,45 +22,29 @@ alias phpext="php -m | grep"
 
 # PHP vendors
 alias pusof="phpunit --stop-on-failure"
-alias phpdoc="sudo phpdoc.php run -d src -t docs --template=~/.composer/vendor/phpdocumentor/templates/responsive"
 alias psr="php-cs-fixer"
 
 # Git
 function git(){hub $@} # Prevents autocompletion bug
-alias gdt="git difftool"
 alias gfpt="git fetch -pt"
-alias gaa="git add --all"
 alias gcaa="gca --amend"
 alias gcaan="gcaa --no-edit"
 alias glpp="git lg"
 
 # Brew
 alias cask="brew cask"
+alias rebrew="brew update --all && brew upgrade && brew cleanup"
 
 # Laravel
 alias remigrate="php artisan migrate:refresh --seed"
 
 # Composer
-alias cr="composer require"
-alias cgu="composer global update"
-alias cgr="composer global require"
 alias recompose="rmf vendor && rmf composer.lock && composer install"
 
-# Rocketeer
-alias deploy="git push && artisan deploy:deploy --tests"
-alias update="git push && artisan deploy:update"
-
-# Preprocessors
-alias recoffee="coffee -o js -cw coffee"
-alias recompass="compass clean && compass compile"
-
-# Aliases
-
-# General aliases
-# //////////////////////////////////////////////////////////////////////
-
 # IDEs
+alias att="atom ."
 alias pstt="pstorm ."
 
-alias chrome="/usr/bin/open -a '/Applications/Google Chrome.app'"
-alias bootstrap="cd $HOME/Dropbox/WEB\ DESIGN/_github/bootstrap && jekyll serve --port 1234"
+# FUCK
+alias fuck='$(thefuck $(fc -ln -1))'
+alias FUCK='fuck'
