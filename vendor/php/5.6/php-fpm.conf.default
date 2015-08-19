@@ -3,7 +3,7 @@
 ;;;;;;;;;;;;;;;;;;;;;
 
 ; All relative paths in this configuration file are relative to PHP's install
-; prefix (/usr/local/Cellar/php56/5.6.8). This prefix can be dynamically changed by using the
+; prefix (/usr/local/Cellar/php56/5.6.12). This prefix can be dynamically changed by using the
 ; '-p' argument from the command line.
 
 ; Include one or more files. If glob(3) exists, it is used to include a bunch of
@@ -11,7 +11,7 @@
 ; file.
 ; Relative path can also be used. They will be prefixed by:
 ;  - the global prefix if it's been set (-p argument)
-;  - /usr/local/Cellar/php56/5.6.8 otherwise
+;  - /usr/local/Cellar/php56/5.6.12 otherwise
 ;include=/usr/local/etc/php/5.6/fpm.d/*.conf
 
 ;;;;;;;;;;;;;;;;;;
@@ -138,7 +138,7 @@ daemonize = no
 ; - 'chdir'
 ; - 'php_values'
 ; - 'php_admin_values'
-; When not set, the global prefix (or /usr/local/Cellar/php56/5.6.8) applies instead.
+; When not set, the global prefix (or /usr/local/Cellar/php56/5.6.12) applies instead.
 ; Note: This directive can also be relative to the global prefix.
 ; Default Value: none
 ;prefix = /path/to/pools/$pool
@@ -351,7 +351,7 @@ pm.max_spare_servers = 5
 ;   last request memory:  0
 ;
 ; Note: There is a real-time FPM status monitoring sample web page available
-;       It's available in: /usr/local/Cellar/php56/5.6.8/share/php/fpm/status.html
+;       It's available in: /usr/local/Cellar/php56/5.6.12/share/php/fpm/status.html
 ;
 ; Note: The value must start with a leading slash (/). The value can be
 ;       anything, but it may not be a good idea to use the .php extension or it
@@ -526,7 +526,7 @@ pm.max_spare_servers = 5
 ; instead.
 
 ; Note: path INI options can be relative and will be expanded with the prefix
-; (pool, global or /usr/local/Cellar/php56/5.6.8)
+; (pool, global or /usr/local/Cellar/php56/5.6.12)
 
 ; Default Value: nothing is defined by default except the values in php.ini and
 ;                specified at startup with the -d argument

@@ -14,6 +14,7 @@ alias sayem="say --voice=\"Alex\""
 alias sayff="say --voice=\"Audrey\""
 alias sayfm="say --voice=\"Thomas\""
 
+alias space="df -hl"
 alias rmf="rm -rf"
 alias phpext="php -m | grep"
 
