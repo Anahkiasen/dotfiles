@@ -1,52 +1,32 @@
+
 # Helpers
 # //////////////////////////////////////////////////////////////////////
 
 alias nuketrash="sudo rm -rvf ~/.Trash/.* && sudo rm -rvf ~/.Trash/*"
+alias show-hidden="defaults write com.apple.finder AppleShowAllFiles YES"
 alias add-spacer="defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type=\"spacer-tile\";}' && killall Dock"
 alias couch="launchctl start com.anahkiasen.couchpotato"
 
 # Shortcuts
 # //////////////////////////////////////////////////////////////////////
 
-# NOPE
-alias sayef="say --voice=\"Allison\""
-alias sayem="say --voice=\"Alex\""
-alias sayff="say --voice=\"Audrey\""
-alias sayfm="say --voice=\"Thomas\""
-
 alias space="df -hl"
 alias fs="du -sh * | sort -n"
 alias rmf="rm -rf"
 alias phpext="php -m | grep"
+alias j="jump"
 
 # Vendor aliases
 # //////////////////////////////////////////////////////////////////////
 
-# PHP vendors
-alias pusof="phpunit --stop-on-failure"
-alias psr="php-cs-fixer"
-
 # Git
 function git(){hub $@} # Prevents autocompletion bug
-alias gaa="ga ."
 alias gfpt="git fetch -pt"
-alias gcaa="gca --amend"
-alias gcaan="gcaa --no-edit"
-alias glpp="git lg"
 
 # Brew
 alias cask="brew cask"
 alias rebrew="brew update --all && brew upgrade && brew cleanup"
 
-# Laravel
+# PHP
 alias remigrate="php artisan migrate:refresh --seed"
-
-# Composer
 alias recompose="rmf vendor && rmf composer.lock && composer install"
-
-# IDEs
-alias pstt="pstorm ."
-
-# FUCK
-alias fuck='$(thefuck $(fc -ln -1))'
-alias FUCK='fuck'
