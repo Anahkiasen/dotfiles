@@ -2,10 +2,11 @@
 # Helpers
 # //////////////////////////////////////////////////////////////////////
 
+alias copyssh="cat ~/.ssh/id_rsa.pub | pbcopy"
 alias nuketrash="sudo rm -rvf ~/.Trash/.* && sudo rm -rvf ~/.Trash/*"
 alias show-hidden="defaults write com.apple.finder AppleShowAllFiles YES"
 alias add-spacer="defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type=\"spacer-tile\";}' && killall Dock"
-alias couch="launchctl start com.anahkiasen.couchpotato"
+alias upd="bubu && csu --snapshot && cgu && npm update -g && gem update --system && gem update && gem cleanup && apm update --no-confirm"
 
 # Shortcuts
 # //////////////////////////////////////////////////////////////////////
@@ -22,11 +23,17 @@ alias j="jump"
 # Git
 function git(){hub $@} # Prevents autocompletion bug
 alias gfpt="git fetch -pt"
+alias gfr="git-fresh -f -l origin"
 
 # Brew
 alias cask="brew cask"
-alias rebrew="brew update --all && brew upgrade && brew cleanup"
+alias services="brew services"
 
 # PHP
 alias remigrate="php artisan migrate:refresh --seed"
 alias recompose="rmf vendor && rmf composer.lock && composer install"
+alias newpackage="construct generate --git --editor-config --phpcs"
+
+# Editors
+alias chrome="open -a 'Google Chrome'"
+alias pstt="pstorm ."

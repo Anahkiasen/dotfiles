@@ -1,13 +1,11 @@
 function usephp() {
   php="php$1"
 
-  ln -sf `brew list $php | grep bin/php -m 1` /usr/local/bin/php
-  ln -sf `brew list $php | grep libphp` /usr/local/lib/libphp5.so
   brew link $php --overwrite
+  brew services stop php70
+  brew services stop php56
+  brew services start $php
   echo "Switched to $php"
-  echo `brew info $php | head -1`
 
-  killall httpd
-  sudo apachectl -k stop
-  sudo apachectl -k start
+  brew services restart nginx
 }

@@ -2,6 +2,7 @@
 
 # Cache and compiled
 .php_cs.cache
+npm-debug.log
 .~*#
 
 #### joe made this: https://goel.io/joe
