@@ -1,11 +1,21 @@
-function usephp() {
-  php="php$1"
+function fresh() {
+	default=$(git rev-parse --abbrev-ref HEAD)
+	branch=${1:-$default}
 
-  brew link $php --overwrite
-  brew services stop php70
-  brew services stop php56
-  brew services start $php
-  echo "Switched to $php"
+	# Prune changes
+	git reset --hard
 
-  brew services restart nginx
+	# Fresh desired branch
+	git checkout $branch
+	git-fresh -ftl origin $branch
+
+	# Recreated deleted master branch
+	# if [ "$branch" != "master" ]; then
+	git checkout master
+	git checkout $branch
+	# fi
+}
+
+function color() {
+	cat ${1} | highlight -O xterm256 --syntax php --line-numbers --style="moria"
 }

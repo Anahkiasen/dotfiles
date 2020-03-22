@@ -1,12 +1,31 @@
+alias weather="curl http://wttr.in/Mésanger"
 
 # Helpers
 # //////////////////////////////////////////////////////////////////////
 
-alias copyssh="cat ~/.ssh/id_rsa.pub | pbcopy"
+alias pbssh="cat ~/.ssh/id_rsa.pub | pbcopy"
 alias nuketrash="sudo rm -rvf ~/.Trash/.* && sudo rm -rvf ~/.Trash/*"
 alias show-hidden="defaults write com.apple.finder AppleShowAllFiles YES"
 alias add-spacer="defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type=\"spacer-tile\";}' && killall Dock"
-alias upd="bubu && csu --snapshot && cgu && npm update -g && gem update --system && gem update && gem cleanup && apm update --no-confirm"
+alias upd="bubu && csu --preview && cgu && npm update -g && yarn global upgrade && zplug update"
+
+# Setups
+# //////////////////////////////////////////////////////////////////////
+
+# Setup aboards
+alias aboard_local="captain abandon && valet start"
+alias aboard_half="aboard_local && services stop mysql@5.7 && services stop redis && captain up -d"
+alias aboard_docker="captain abandon && valet stop && captain up -d"
+
+# Project aboards
+#
+
+# Switchers
+alias work_local="aboard_local"
+alias work_panini="aboard_local && z panini && pstt && open http://panini.localhost/"
+
+# PARTY STARTERS
+# alias FLEXTIME="work_flex"
 
 # Shortcuts
 # //////////////////////////////////////////////////////////////////////
@@ -14,16 +33,20 @@ alias upd="bubu && csu --snapshot && cgu && npm update -g && gem update --system
 alias space="df -hl"
 alias fs="du -sh * | sort -n"
 alias rmf="rm -rf"
-alias phpext="php -m | grep"
-alias j="jump"
 
 # Vendor aliases
 # //////////////////////////////////////////////////////////////////////
 
 # Git
-function git(){hub $@} # Prevents autocompletion bug
-alias gfpt="git fetch -pt"
-alias gfr="git-fresh -f -l origin"
+# function git(){hub $@} # Prevents autocompletion bug
+alias gfr="git-fresh -ftl origin"
+
+# Git Flow aliases updated for AVH
+alias gflfp="git flow feature publish"
+alias gflhp="git flow hotfix publish"
+alias gflbs="git flow bugfix start"
+alias gflbf="git flow bugfix finish"
+alias gflbp="git flow bugfix publish"
 
 # Brew
 alias cask="brew cask"
@@ -31,9 +54,8 @@ alias services="brew services"
 
 # PHP
 alias remigrate="php artisan migrate:refresh --seed"
-alias recompose="rmf vendor && rmf composer.lock && composer install"
-alias newpackage="construct generate --git --editor-config --phpcs"
+alias recompose="rm -rf vendor composer.lock && composer install"
+alias reyarn="rm -rf node_modules yarn.lock package.lock && yarn"
 
 # Editors
-alias chrome="open -a 'Google Chrome'"
 alias pstt="pstorm ."

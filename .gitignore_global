@@ -1,9 +1,15 @@
 # joe osx jetbrains archives vagrant
-
+.env
 # Cache and compiled
+.tags
 .php_cs.cache
 npm-debug.log
+yarn-error.log
 .~*#
+.vscode
+
+# Flow
+.flowconfig
 
 #### joe made this: https://goel.io/joe
 

@@ -1,86 +1,105 @@
 # Taps
 # ------------------------------------------------------------------------------
 
+tap "blackfireio/blackfire"
+tap "homebrew/bundle"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
+tap "homebrew/cask"
+tap "homebrew/command-not-found"
+tap "homebrew/core"
 tap "homebrew/dupes"
-tap "homebrew/versions"
 tap "homebrew/nginx"
 tap "homebrew/php"
 tap "homebrew/services"
-tap "caskroom/cask"
-tap "caskroom/fonts"
-tap "caskroom/versions"
-tap "homebrew/command-not-found"
-tap "blackfireio/homebrew-blackfire"
+tap "homebrew/versions"
+tap "tldr-pages/tldr"
 
 # Homebrew
 # ------------------------------------------------------------------------------
 
 # Terminal and stuff
+brew "bash"
+brew "tldr"
 brew "coreutils"
-brew "zsh"
+brew "grep"
 brew "zsh-completions"
-brew "homebrew/dupes/grep"
+brew "zsh"
 
 # Utilities
+brew "bat"
 brew "curl"
+brew "git-fresh"
 brew "git-ftp"
 brew "git"
-brew "htop-osx"
 brew "hub"
 brew "mackup"
+brew "mas"
+brew "rename"
+brew "tldr"
 brew "tree"
 brew "watch"
 brew "wget"
+brew "z"
+brew "zplug"
 
 # Web server
-brew "nginx"
 brew "mysql"
+brew "nginx"
+brew "redis"
 
 # Node and Ruby
-brew "node"
+brew "node", link: false
+brew "node@8", link: true
 brew "ruby"
+brew "yarn"
 
 # PHP
-brew "php56", args: ['without-apache']
-brew "php56-xdebug"
-brew "php70", args: ['with-thread-safety', 'without-apache']
-brew "php70-pthreads"
-brew "php70-mailparse"
+brew "php"
+brew "php@5.6"
+brew "php@7.0"
+brew "php@7.1"
+brew "blackfireio/blackfire/blackfire-agent"
 brew "composer"
 
 # Caskroom
 # ------------------------------------------------------------------------------
 
 # General
-cask "adobe-creative-cloud"
-cask "adobe-reader"
-cask "boom"
+cask "1password"
+cask "cleanmymac"
 cask "dropbox"
-cask "google-chrome-dev"
+cask "brave-browser"
+cask "goofy"
+cask "notion"
 cask "lastfm"
 cask "libreoffice"
 cask "screenflick"
+
+# Utilities
+cask "alfred"
+cask "bartender"
 cask "spectacle"
+cask "the-unarchiver"
+cask "unlox"
 
 # Work
-cask "atom"
-cask "colorsnapper"
 cask "cyberduck"
 cask "dash"
+cask "focus"
 cask "harvest"
-cask "iterm2-beta"
 cask "paw"
-cask "phpstorm-eap"
-cask "querious"
-cask "skype"
+cask "phpstorm"
+cask "postman"
+cask "tableplus"
+cask "sketch"
 cask "slack"
 cask "sourcetree"
-cask "vagrant"
-cask "virtualbox"
+cask "visual-studio-code"
 
 # Gaming and medias
-cask "couchpotato"
 cask "plex-media-server"
+cask "radarr"
 cask "sonarr"
 cask "steam"
 cask "transmission"
@@ -97,4 +116,13 @@ cask "quicklook-csv"
 cask "quicklook-json"
 
 # Fonts
-cask "font-fira-code"
+cask "font-ibm-plex"
+
+# Mac App Store
+# ------------------------------------------------------------------------------
+
+mas "Reeder", id: 880001334
+mas "Sip", id: 507257563
+mas "Keynote", id: 409183694
+mas "Spark", id: 1176895641
+mas "Xcode", id: 497799835
