@@ -17,16 +17,6 @@ alias aboard_local="captain abandon && valet start"
 alias aboard_half="aboard_local && services stop mysql@5.7 && services stop redis && captain up -d"
 alias aboard_docker="captain abandon && valet stop && captain up -d"
 
-# Project aboards
-#
-
-# Switchers
-alias work_local="aboard_local"
-alias work_panini="aboard_local && z panini && pstt && open http://panini.localhost/"
-
-# PARTY STARTERS
-# alias FLEXTIME="work_flex"
-
 # Shortcuts
 # //////////////////////////////////////////////////////////////////////
 
